@@ -1,7 +1,7 @@
 img {
 max-width: 100%;
 }
-}
+
 section {
     background-color: rgb(250, 214, 161);
 }
@@ -25,7 +25,7 @@ header nav ul {
     list-style: none;
     
 }
-#menutoggle: checked + ul {
+#menutoggle checked + ul {
     display: block;
 }
 
@@ -34,7 +34,7 @@ header nav ul li {
  border-bottom: 2px solid rgb(20,20, 50)
 }
 
-header nav ul li: :last-child{
+header nav ul li last-child{
     border-bottom: 0px;
 }
 @media(min-width: 768px) {
@@ -49,7 +49,7 @@ header nav ul li: :last-child{
         background-color: rgb(239, 178, 245);
     }
 }
-label [= menutoggle]{
+label [ menutoggle]{
     display: none;
 }
 header nav ul {

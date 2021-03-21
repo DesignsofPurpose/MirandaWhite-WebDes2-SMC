@@ -1,0 +1,19 @@
+.flex-container {
+    display: flex;
+}
+
+.flex-container> * {
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    section {
+        width: 760px;
+        margin: auto;
+    }
+}
+@media (min-width: 1024px) {
+    .flex-container{
+        
+    }
+}

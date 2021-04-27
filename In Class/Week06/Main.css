@@ -1,0 +1,17 @@
+@import url('reset.css');
+@import url('DOPcolors.css');
+@import url('grid.css');
+
+
+
+#qhabitat {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/29/Australian_bush.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Typeface */
+.text-center {
+    text-align: center;
+    }

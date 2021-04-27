@@ -1,0 +1,18 @@
+.bg-orange {
+    background-color: orange;
+}
+.bg-green{
+    background-color: greenyellow;
+}
+.bg-orangeR{
+background-color: orangered;
+}
+.bg-pink{
+    background-color: rgb(235, 57, 154);
+}
+
+/* Text Colors */
+.txt-light {
+    color: rgb(240,240,240)
+
+}

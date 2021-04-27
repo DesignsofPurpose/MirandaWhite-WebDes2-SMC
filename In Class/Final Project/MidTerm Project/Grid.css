@@ -1,0 +1,38 @@
+/* Flexbox */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+.flex-container > * {
+    width: 100%;
+}
+.segment {
+    margin: 10px;
+}
+
+/* Media Queries */
+@media (min-width: 768px){
+    .w-md-50 {
+        width:33%;}
+    }
+
+@media (min-width:1024px){
+    .flex-container{
+            width: 1024px;
+            margin: 0px auto 20px;
+        }
+    
+    .w-lg-33 {
+        width: ;
+    }
+    .w-lg-25 {
+        width: 25%;
+    }
+}
+#text {
+    line-height:50px;
+}
+
+
+

@@ -1,0 +1,82 @@
+/* Reset CSS */
+
+/* Generic Rules */
+body{
+    margin:0px;
+}
+img {
+    max-width:100%;
+}
+
+/* Navigation */
+nav ul{
+    list-style: none;
+    padding-left: 0px;
+    list-style: none;
+}
+nav ul a{
+    color: #ef8e31;
+    text-decoration: none;
+}
+nav{
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    list-style: center;
+    list-style-position: inside;
+    list-style-image: none;
+    list-style-type: center;
+  }
+  
+  nav li {
+    line-height: 87px;
+    float: left;
+    text-align: center;
+    width: 150px;
+  }
+
+  
+/* Toggle Menu */
+
+
+#main-navigation label {
+    display: block;
+    cursor: pointer;
+    float: center;
+    font-size: 26px;
+    margin: 18px 31.5px;
+  }
+
+  #main-navigation {
+    display: block;
+  }
+
+  #main-navigation a {
+    display: block;
+    padding: 3px;
+    font-size: 14.5px;
+    text-align: center;
+    clear: right;
+  }
+
+  ul {
+    display: none;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    transition: 800ms;
+  }
+
+  input[type=checkbox]:checked~ul {
+  display: inline-table;
+}
+
+#menutoggle {
+    height: 75px;
+    float: center;
+    display: none;
+}
+
+  #menutoggle checked + ul {
+    display: block;
+}
+

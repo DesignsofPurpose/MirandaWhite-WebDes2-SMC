@@ -7,9 +7,13 @@
 .flex-container > * {
     width: 100%;
 }
-
+/* about the content */
 .segment {
     margin: 10px;
+}
+/* or */
+.inside-wrapper {
+
 }
 
 @media (min-width: 768px){

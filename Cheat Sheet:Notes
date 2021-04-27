@@ -45,6 +45,7 @@ nav ul a {
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
     grid-gap: 16px;
 }
+
 <!-- break page @ 768px (responsive) -->
 @media (min-width: 768px){
     section {
@@ -53,7 +54,7 @@ nav ul a {
     }
 
     .grid-container {
-        grid-template-columns: repeate (4, 25%);
+        grid-template-columns: repeat (4, 25%);
         grid-template-rows: 1fr 1fr;
         height: 50vh;
     }
@@ -80,6 +81,7 @@ grid-column: 4/5;
 </nav>
 
 <!-- link to page -->
+ 
     
 <a href="#">Blog</a>
     

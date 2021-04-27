@@ -1,0 +1,37 @@
+<style>
+        body {
+            margin: 20px;
+        }
+        #myHeading  {
+            background-color: aquamarine;
+            margin: 40px;
+            padding: 20px;
+        }
+        #myDiv {
+            height: 400px;
+            background-color: lightgrey;
+        }
+    </style>
+
+    /* Reset */
+
+      
+nav ul{
+    list-style: none;
+    padding-left: 0px;
+    list-style: none;
+    padding-left: 0px;
+    
+}
+nav ul a{
+    color: black;
+    text-decoration: none;
+}
+
+  
+  nav li {
+    line-height: 87px;
+    float: left;
+    text-align: center;
+    width: 150px;
+  }

@@ -1,0 +1,18 @@
+.bg-beige {
+    background-color: orangered;
+}
+.bg-purple{
+    background-color: maroon;
+}
+.bg-green{
+background-color: rgb(5, 66, 5);
+}
+.bg-pink{
+    background-color:orangered;
+}
+
+/* Text Colors */
+.txt-light {
+    color: black;
+
+}

@@ -1,0 +1,107 @@
+
+body {
+    margin: 40px;
+    padding: 10px;
+    text-align: center;
+   
+  }
+  
+.header {
+      grid-area: header;
+    }
+  
+.footer {
+      grid-area: footer;
+    }
+ 
+.header,
+.footer {
+        background-color: yellow;
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+  
+  
+
+.wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: [col1-start] 33%  [col2-start] 33%  [col3-start] 33% [col3-end];
+        grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+        background-color: #fff;
+        grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "footer  footer  footer";
+      }
+
+.box {
+    background-color: black;
+    color: red;
+    border-radius: none;
+    padding: 10px;
+    font-size: 150%;  
+  }
+
+
+
+  .a {
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start ;
+    grid-area:0;
+    background-color: yellow;
+  }
+  .b {
+    grid-column: col3-start ;
+    grid-row: row1-start / row2-end;
+    grid-area: 0;
+    background-color: yellow;
+  }
+  .c {
+    grid-column: col1-start;
+    grid-row: row2-start ;
+    grid-area: 0;
+    background-color: yellow;
+  }
+  .d {
+    grid-column: col2-start ;
+    grid-row: row2-start ;
+    grid-area: 0;
+    background-color: yellow;
+  }
+
+  
+  #sideBar{
+    width: 100%;
+    height: 100%;
+}
+
+  
+
+
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: yellow;
+    text-decoration: none;
+    font-size: 100%;
+    width: 30%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center; /* If you want the text to be centered */
+  }
+.navbar a:hover {
+    background-color: red;
+  }
+  
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 500px) {
+.navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+  }

@@ -54,14 +54,25 @@
     <div id="myDiv"> </div>
 
     <button href="#" id="colorChange"> Change the Color! </button>
+<br><br>
+    <div> Field1: <input type="text" id="field1" value="Hello World!"><br><br>
+        Field2: <input type="text" id="field2"><br><br>
 
-    <div> </div>
+        <button onclick="myFunction()">Copy Text</button>
+
+
+
+    </div>
 
 
     <!-- Javascript -->
 
     <script>
         console.log("This is your page talking to you");
+
+        function myFunction() {
+            document.getElementById("field2").value = document.getElementById("field1").value;
+        }
 
 
         let answer = prompt("What's your name?", "Jane doe");

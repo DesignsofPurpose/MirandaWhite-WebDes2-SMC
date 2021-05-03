@@ -1,0 +1,37 @@
+//Wrapper CSS//
+
+.box{
+    background-color: transparent;
+    color: #fff;
+    border-radius: 0px;
+    padding: 20px;
+    font-size: 150%;
+  }
+  
+.box:nth-child(even){
+    background-color: none;
+    color: none;
+  }
+  
+    .wrapper {
+      margin: 0px;
+      display: inline-flex;
+      border: 0px solid #000;
+      grid-gap: 0px;
+      grid-template-columns: 20% 20% 20% 20%;
+      grid-template-areas: 0;
+      grid-row: 0;
+      width: 0;
+    }
+    #lrgImg{
+        display: block;
+        image: 50%;
+        
+    }
+
+
+    //deleted DIV//
+            <div class="row" id="lrgImg">
+            <div class="column">
+                <img src="pexels-athena-3095537.webp" alt="polaroid5" id="pen" style="width:100%">
+            </div>

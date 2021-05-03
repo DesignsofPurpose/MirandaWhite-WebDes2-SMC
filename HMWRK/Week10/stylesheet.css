@@ -12,15 +12,13 @@ body {
 img {
     max-width:100%;
 }
-nav {
 
-}
 
-{
+nav{
   
-    text-align: center;
-    list-style: center;
-    list-style-position: inside;
+    text-align: justify;
+    list-style: right;
+    list-style-position: center;
     list-style-image: none;
     list-style-type: center;
     width: 100%;

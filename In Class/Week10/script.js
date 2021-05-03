@@ -27,19 +27,21 @@ let toggleTheImage = function(){
     
     
     if(tggleBTN.innerText === "Next Picture"){
-        console.log("show the second one");
         quokkaImg.scr = "https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
         tggleBTN.innerText = "Now show the first one!";
+        console.log("show the second one");
         // if it's true
     }
     else {
         // if it's false
-        console.log("show the first one");
-        quokkaImg.src = "https://images.pexels.com/photos/1598377/pexels-photo-1598377.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        quokkaImg.src = "pexels-gary-whyte-730539.jpg";
         tggleBTN.innerText= "Next Picture";
+        console.log("show the first one");
     }
+
 }
 
-
-
 tggleBTN.addEventListener("click", toggleTheImage);
+
+
+  

@@ -1,0 +1,27 @@
+<!-- Amen's HTML -->
+    <div id="myDiv" style="display: block;">
+        <img scr="https://images.pexels.com/photos/1598377/pexels-photo-1598377.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Lion1" width="500" height="600">
+        <br>
+    </div>
+    <div id="myDiv2" style="display:none;">
+        <img src="https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="Lion2" width="500" height="600">
+        <br>
+
+    </div>
+
+
+    // Amen's JS  //
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    var y = document.getElementById("myDIV2");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      y.style.display = "none"
+    } else {
+      y.style.display = "block";
+      x.style.display = "none";
+  
+    }
+  }

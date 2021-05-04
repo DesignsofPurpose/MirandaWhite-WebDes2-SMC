@@ -50,6 +50,6 @@
   changeTheColor();
   
   clrBTN.addEventListener("click", changeTheColor);
-  tgglBTN.addEventListener("click", toggleTheImage);
+
 
 

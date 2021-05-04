@@ -1,5 +1,6 @@
 let header = document.getElementById("myHeader");
 let clrBTN = document.getElementById("colorBTN");
+
 let quokkaImg = document.getElementById("quokkaImg");
 let tgglBTN = document.getElementById("toggleBTN");
 

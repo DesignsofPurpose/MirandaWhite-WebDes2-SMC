@@ -1,5 +1,4 @@
 
-
 #toggleAssist,
 
 
@@ -22,6 +21,9 @@ ul.nav-links {
 @media(min-width: 768px) {
     .flex-container img{
         width: 12vw;
+    }
+    .li{
+        display:none;
     }
 }
 @media (min-width: 1024px) {
@@ -70,4 +72,3 @@ color: black;
     }
 
 }
-

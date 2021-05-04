@@ -1,18 +1,20 @@
 
 
-function myFunction() {
+     function myFunction() {
       var x = document.getElementById("myDIV1");
       var y = document.getElementById("myDIV2");
       if (x.style.display === "none") {
         x.style.display = "block";
         y.style.display = "none"
       } else {
-        y.style.display = "block";
         x.style.display = "none";
+        y.style.display = "block";
+ 
     
       }
     }
     let header = document.getElementById("myHeader");
+    let div = document.getElementById("myDIV1")
     let clrBTN = document.getElementById("colorBTN");
     
     let quokkaImg = document.getElementById("quokkaImg");
@@ -31,21 +33,23 @@ function myFunction() {
     }
     
     let toggleTheImage = function(){
-        // WE'LL DO SOME IMAGE TOGGLING HERE
-    
-        if(tgglBTN.innerText === "Show the second one!") {
-            console.log("show the second image");
-            quokkaImg.src = "quokka2.jpg";
-            tgglBTN.innerText = "Now show the first one!";
-        }
-        else {
-            console.log("show the first image");
-            quokkaImg.src = "quokka1.webp";
-            tgglBTN.innerText = "Show the second one!";
-        }
-    }
-    
-    changeTheColor();
-    
-    clrBTN.addEventListener("click", changeTheColor);
-    tgglBTN.addEventListener("click", toggleTheImage);
+      // WE'LL DO SOME IMAGE TOGGLING HERE
+  
+      if(tgglBTN.innerText === "Show the second one!") {
+          console.log("show the second image");
+          quokkaImg.src = "quokka2.jpg";
+          tgglBTN.innerText = "Now show the first one!";
+      }
+      else {
+          console.log("show the first image");
+          quokkaImg.src = "quokka1.webp";
+          tgglBTN.innerText = "Show the second one!";
+      }
+  }
+  
+  changeTheColor();
+  
+  clrBTN.addEventListener("click", changeTheColor);
+  tgglBTN.addEventListener("click", toggleTheImage);
+
+

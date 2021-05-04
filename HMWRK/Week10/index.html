@@ -9,15 +9,22 @@
 
     <title>Toggle Img SRC</title>
 </head>
+
 <style>
     body {
         background-color: black;
         color: whitesmoke;
+        margin: 0px; 
+    }
+    header {
+        height: none;
     }
 </style>
 
+
 <body>
-    <header>
+    <header id="myHeader">
+        <button id="colorBTN">Change the color!</button><br>
         <nav>
 
             <div id="myNav">
@@ -30,7 +37,7 @@
                 <input id="menutoggle" type="checkbox" />
 
 
-                <ul class="topnav-right">
+                <ul class="topnav-right" id="myHeader">
                     <a href=" ">Home</a>
                     <a href=" ">About</a>
                     <a href=" ">Blog</a>
@@ -41,7 +48,7 @@
     </header>
 
     <main>
-        <div class="row" id="myDIV2">
+        <div class="row">
             <div class="column">
                 <img src="pexels-lisa-3586766.jpg" alt="polaroid1" id="whiteBars" style="width:100%">
             </div>
@@ -54,35 +61,36 @@
             </div>
 
             <div class="column">
-                <img src="pexels-lisa-2846828.jpg" alt="polaroid4" id="pen" width=100%  height="352">
+                <img src="pexels-lisa-2846828.jpg" alt="polaroid4" id="pen" width=100%  height="348">
             </div>
         </div>
 
 
         <button onclick="myFunction()">Next Image</button>
 
-        <script src="script.js"></script>
+
 
 
         <div id="myDIV1">
-            <img src="pexels-athena-3095537.webp" alt="sisters" width="500" height="600">
+            <img src="pexels-lisa-2846828.jpg" alt="sisters" width="500" height="600"> 
             <br>
-
-
-
+        This is my DIV1 element.
         </div>
-
-        <div id=>
-            <img src="pexels-lisa-2846828.jpg" alt="youngest" width="500" height="600">
+        
+        <div id="myDIV2">
+            <img src="pexels-matheus-bertelli-4085685.jpg" alt="youngest" width="500" height="600"> 
             <br>
-
+            This is my DIV2 element.
         </div>
+        
+        <p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
 
 
 
 
 
-
+<script src="script.js"></script>
+</body>
 
 
     </main>

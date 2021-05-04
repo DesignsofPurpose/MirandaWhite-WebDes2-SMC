@@ -10,6 +10,10 @@ ul.nav-links {
 }
 
 
+.logo {
+    width: 50%;
+}
+
 
 #toggleAssist:checked + ul.nav-links {
 
@@ -25,11 +29,15 @@ ul.nav-links {
     .li{
         display:none;
     }
+   
+    
+   
 }
 @media (min-width: 1024px) {
     .flex-container img {
-        width: 10vw;
+        width: 100%;
     }
+
 }
 @media (min-width: 768px) {
 
@@ -42,6 +50,9 @@ ul.nav-links {
         height: 100px;
 
     }
+
+
+  
 
 
 
@@ -71,4 +82,7 @@ color: black;
 
     }
 
+}
+#fix {
+    width: 90%;
 }

@@ -45,6 +45,9 @@ nav{
     background-color: purple;
     margin-top: 20px;
   }
+fix{
+  width: 100%;
+}
 #myDIV2 {
     width: 100%;
     padding: 50px 0;
@@ -56,7 +59,7 @@ nav{
       
 * {
    box-sizing: border-box;
-   width: 100%;
+   
   }
   /* The grid: Four equal columns that floats next to each other */     
 .column {

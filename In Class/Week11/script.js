@@ -1,4 +1,6 @@
-
+let changeSlide = function(){
+    console.log("something");
+}
     let carousel = document.getElementById("carousel");
     let carouselIMG = document.getElementById("carouselIMG");
 
@@ -35,8 +37,10 @@
     }
 
     window.addEventListener("load", function(){
-        setTimeout(subscribeRequest, 4000);
-        setInterval(imgChange, 3000);
-    })
+        setTimeout(function(){
+            prompt("SUBSCRIBE TO OUR NEWSLETTER!!!","MYEMAIL.CI)
+        })       
+            //")   subscribeRequest}, 5000); setInterval(imgChange, 3000);
+    
 
     

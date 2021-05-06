@@ -35,7 +35,7 @@
   /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
   @media screen and (max-width: 500px) {
     .navbar a {
-      float: none;
+      float: center;
       display: block;
       width: 100%;
       text-align: left; /* If you want the text to be left-aligned on small screens */
@@ -46,12 +46,12 @@
 .jumbotron {
     background-image: url('https://littleastronomy.com/wp-content/uploads/2019/04/pink_planets-1.jpg');
     background-size: cover;
-    background-position: center initial;
+    background-position: center;
 }
 
 .jumbotron h1,
 .jumbotron h3 {
-color: rgb(red, green, blue);
+color: beige;
 padding-left: 10%;
 }
 
@@ -61,7 +61,7 @@ body {
   }
   
   h1 {
-    background-color:black;
+    background-color:transparent;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 50px
@@ -90,6 +90,7 @@ section {
 }
 article{
     min-height: 300px;
+    min-width: 50%;
 }
 
 .center {

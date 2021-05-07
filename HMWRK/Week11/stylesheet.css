@@ -1,0 +1,276 @@
+<!-- Carousel= div & CarouselIMG= displayIMG -->
+    <script>
+        let carousel = document.getElementById("carousel");
+        let carouselIMG = document.getElementById("carouselIMG");
+
+        let tShirtImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let lunchBoxImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let fileFolderImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let calendarImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let journalImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let printsXrandiImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let TypePrintImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let counter = 0;
+
+        // error msg about .src (timed popup doesn't appear without .src) //
+        let imgChange = function () {
+            counter++;
+            if (counter === 3) { counter = 0 }
+            quokkas1.src = images[counter];
+
+            // METHOD 2:
+            // if(carouselIMG.alt === "qute quokka 1"){
+            //     carouselIMG.src = images[1];
+            //     carouselIMG.alt = "qute quokka 2";
+            // }
+            // else if(carouselIMG.alt === "qute quokka 2"){
+            //     carouselIMG.src = images[2];
+            //     carouselIMG.alt = "qute quokka 3";
+            // }
+            // else if(carouselIMG.alt === "qute quokka 3"){
+            //     carouselIMG.src = images[0];
+            //     carouselIMG.alt = "qute quokka 1";
+            // }
+        }
+
+        let subscribeRequest = function () {
+            prompt("Subscribe Now for Updates and Discounts", "my@email.com");
+        }
+
+        window.addEventListener("load", function () {
+            setTimeout(subscribeRequest, 4000);
+            setInterval(imgChange, 3000);
+        })
+
+    </script>
+
+    <!-- Code isn't responding -->
+    <!-- script> -->
+    <!-- var merchMpwrCtgs = ["tShirts", "lunchBoxes"]; -->
+    <!-- var deskMpwrCtgs = ["fileFolders", "Calendars","journals"]; -->
+    <!-- var wallArtCtgs = ["printsXrandi", "typePrints"]; -->
+
+    <!-- var group = document.getElementById("group"); -->
+    <!-- var category = document.getElementById("category"); -->
+
+    <!-- group.addEventListener('change', function () { -->
+    <!-- console.log(group.value); -->
+    <!-- if (group.value == 'merchMpwr') { -->
+    <!-- fillCategory(tShirtImages); -->
+    <!-- } -->
+    <!-- if (groupSelect.value == 'merchMpwr') { -->
+    <!-- fillCategory(lunchBoxImages); -->
+    <!-- } -->
+    <!-- }); -->
+    <!-- // creating options of caterory array// -->
+    <!-- var fillCategory = function (selection) { -->
+    <!-- categorySelect.innerHTML = ""; -->
+    <!-- selection.forEach(element => { -->
+    <!-- var opt = document.createElement('option'); -->
+    <!-- opt.value = element; -->
+    <!-- opt.textContent = element.charAt(0).toUpperCase() + element.slice(1); -->
+
+    <!-- categorySelect.appendChild(opt); -->
+    <!-- }); -->
+    <!-- } -->
+    <!-- /script> -->
+
+    <!-- script> -->
+    <!-- var quokkaImgs = ["quokkas1.jpg", "quokkas2.jpg", "quokkas3.jpg"]; -->
+    <!-- var currentImg = 0; -->
+    <!-- var carouselImg = document.getElementById("carouselImg"); -->
+
+    <!-- // add in all galleries // -->
+    <!-- window.setInterval(merchMpwrGallery, 3000); -->
+    <!-- window.setInterval(deskMpwrGallery, 3000); -->
+
+
+    <!-- // changing images here USE THIS!!!!!!!!!!// -->
+    <!-- function merchMpwrGallery() { -->
+    <!-- var nextImg = currentImg + 1; -->
+    <!-- if (nextImg == quokkaImgs.length) nextImg = 0; -->
+    <!-- carouselImg.src = quokkaImgs[nextImg]; -->
+    <!-- currentImg = nextImg; -->
+    <!-- } -->
+    <!-- function ForestGallery() { -->
+    <!-- var nextImg = currentImg + 1; -->
+    <!-- if (nextImg == quokkaImgs.length) nextImg = 0; -->
+    <!-- carouselImg.src = quokkaImgs[nextImg]; -->
+    <!-- currentImg = nextImg; -->
+
+    <!-- } -->
+    <!-- /script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* another paste */
+    <!-- Carousel= div & CarouselIMG= displayIMG -->
+    <script>
+        let carousel = document.getElementById("carousel");
+        let carouselIMG = document.getElementById("carouselIMG");
+
+        let tShirtImages = [
+            "../../Girl Power.jpg",
+            "../../HerStory.jpg",
+            "../../Women Up.jpg"
+        ]
+        let lunchBoxImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let fileFolderImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let calendarImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let journalImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let printsXrandiImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let TypePrintImages = [
+            "quokkas1.jpg",
+            "quokkas2.jpg",
+            "quokkas3.jpg"
+        ]
+        let counter = 0;
+
+
+        let imgChange = function () {
+            counter++;
+            if (counter === 3) { counter = 0 }
+            carouselIMG.src = images[counter];
+
+            // METHOD 2:
+            // if(carouselIMG.alt === "qute quokka 1"){
+            //     carouselIMG.src = images[1];
+            //     carouselIMG.alt = "qute quokka 2";
+            // }
+            // else if(carouselIMG.alt === "qute quokka 2"){
+            //     carouselIMG.src = images[2];
+            //     carouselIMG.alt = "qute quokka 3";
+            // }
+            // else if(carouselIMG.alt === "qute quokka 3"){
+            //     carouselIMG.src = images[0];
+            //     carouselIMG.alt = "qute quokka 1";
+            // }
+        }
+
+        let subscribeRequest = function () {
+            prompt("Subscribe Now for Updates and Discounts", "my@email.com");
+        }
+
+        window.addEventListener("load", function () {
+            setTimeout(subscribeRequest, 4000);
+            setInterval(imgChange, 3000);
+        })
+
+    </script>
+
+    <!-- Code isn't responding -->
+    <!-- script> -->
+    <!-- var merchMpwrCtgs = ["tShirts", "lunchBoxes"]; -->
+    <!-- var deskMpwrCtgs = ["fileFolders", "Calendars","journals"]; -->
+    <!-- var wallArtCtgs = ["printsXrandi", "typePrints"]; -->
+
+    <!-- var group = document.getElementById("group"); -->
+    <!-- var category = document.getElementById("category"); -->
+
+    <!-- group.addEventListener('change', function () { -->
+    <!-- console.log(group.value); -->
+    <!-- if (group.value == 'merchMpwr') { -->
+    <!-- fillCategory(tShirtImages); -->
+    <!-- } -->
+    <!-- if (groupSelect.value == 'merchMpwr') { -->
+    <!-- fillCategory(lunchBoxImages); -->
+    <!-- } -->
+    <!-- }); -->
+    <!-- // creating options of caterory array// -->
+    <!-- var fillCategory = function (selection) { -->
+    <!-- categorySelect.innerHTML = ""; -->
+    <!-- selection.forEach(element => { -->
+    <!-- var opt = document.createElement('option'); -->
+    <!-- opt.value = element; -->
+    <!-- opt.textContent = element.charAt(0).toUpperCase() + element.slice(1); -->
+
+    <!-- categorySelect.appendChild(opt); -->
+    <!-- }); -->
+    <!-- } -->
+    <!-- /script> -->
+
+    <!-- script> -->
+    <!-- var quokkaImgs = ["quokkas1.jpg", "quokkas2.jpg", "quokkas3.jpg"]; -->
+    <!-- var currentImg = 0; -->
+    <!-- var carouselImg = document.getElementById("carouselImg"); -->
+
+    <!-- // add in all galleries // -->
+    <!-- window.setInterval(merchMpwrGallery, 3000); -->
+    <!-- window.setInterval(deskMpwrGallery, 3000); -->
+
+
+    <!-- // changing images here USE THIS!!!!!!!!!!// -->
+    <!-- function merchMpwrGallery() { -->
+    <!-- var nextImg = currentImg + 1; -->
+    <!-- if (nextImg == quokkaImgs.length) nextImg = 0; -->
+    <!-- carouselImg.src = quokkaImgs[nextImg]; -->
+    <!-- currentImg = nextImg; -->
+    <!-- } -->
+    <!-- function ForestGallery() { -->
+    <!-- var nextImg = currentImg + 1; -->
+    <!-- if (nextImg == quokkaImgs.length) nextImg = 0; -->
+    zz carouselImg.src = quokkaImgs[nextImg];
+    currentImg = nextImg;
+
+    }
+    /script>
+

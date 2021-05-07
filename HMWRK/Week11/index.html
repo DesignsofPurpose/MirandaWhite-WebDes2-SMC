@@ -8,76 +8,95 @@
 </head>
 
 <body>
-    <div id="carousel">
-        <img src="quokkas1.jpg" alt="qute quokka 1" id="carouselIMG">
-    </div>
+    <header>
+        <!-- !!!!!!!!CODE WORKS!!!!!!!!!! -->
+        <!-- Turn into jumbotron -->
+        <div id="carousel">
+            <img src="MelaninMade.jpg" alt=" " id="carouselIMG">
+        </div>
 
-    <form>
-        <label for="group">Group:</label>
-        <select id="group">
-            <option value="cuteAnimals">Cute Animals</option>
-            <option value="food">Food</option>
-            <option value="nature">Nature</option>
+        <form>
+            <label for="groupSelect">Group:</label>
+            <select id="groupSelect">
+                <option></option>
+                <option value="merchMpwr">Empowerment Merch</option>
+                <option value="deskMpwr">Desk Empowerment</option>
+                <option value="wallArt">Wall Art</option>
+            </select>
 
-        </select>
-        <label for="category">Category:</label>
-        <select id="category">
-            <option>
-
-            </option>
-        </select>
-    </form>
-
-
-    
+            <label for="catSelect">Category:</label>
+            <select id="catSelect">
+                <option></option>
+            </select>
+        </form>
     </header>
 
     <hr>
 
+
+    <main>
+        <div id="gallery">
+            <img src="MelaninMade.jpg" alt="cuteT" id="galleryImg">
+        </div>
+    </main>
+
     <script>
-        let carousel = document.getElementById("carousel");
-        let carouselIMG = document.getElementById("carouselIMG");
+        var groupSelect = document.getElementById("groupSelect");
+        var catSelect = document.getElementById("catSelect");
+        var galleryImg = document.getElementById("galleryImg");
 
-        let cuteQuokkasimages = [
-            "quokkas1.jpg",
-            "quokkas2.jpg",
-            "quokkas3.jpg"
-        ]
-        let coffeeImages = [
-            "quokkas1.jpg",
-            "quokkas2.jpg",
-            "quokkas3.jpg"
-        ]
-        let moutainsImages = [
-            "quokkas1.jpg",
-            "quokkas2.jpg",
-            "quokkas3.jpg"
-        ]
-        let counter = 0;
+        var merchMpwr = ["MPWR T-shirts", "MPWR Lunch Boxes"];
+        var deskMpwr = ["File Folders", "Calendars", "Journals"];
+        var wallArt = ["DOP Prints", "Typeface Prints"];
 
+        var imageCounter = 1;
 
-        let imgChange = function () {
-            counter++;
-            if (counter === 3) { counter = 0 }
-            carouselIMG.src = images[counter];
+        groupSelect.addEventListener("change", function () {
+            console.log(groupSelect.value);
 
-            // METHOD 2:
-            // if(carouselIMG.alt === "qute quokka 1"){
-            //     carouselIMG.src = images[1];
-            //     carouselIMG.alt = "qute quokka 2";
-            // }
-            // else if(carouselIMG.alt === "qute quokka 2"){
-            //     carouselIMG.src = images[2];
-            //     carouselIMG.alt = "qute quokka 3";
-            // }
-            // else if(carouselIMG.alt === "qute quokka 3"){
-            //     carouselIMG.src = images[0];
-            //     carouselIMG.alt = "qute quokka 1";
-            // }
+            if (groupSelect.value == 'merchMpwr') {
+                fillCategory(merchMpwr);
+            }
+            else if (groupSelect.value == 'deskMpwr') {
+                fillCategory(deskMpwr);
+            }
+            else if (groupSelect.value == 'wallArt') {
+                fillCategory(wallArt);
+            }
+            else {
+                //for all other cases
+                catSelect.innerHTML = "";
+            }
+        })
+
+        var fillCategory = function (catArray) {
+            catSelect.innerHTML = "";
+            catArray.forEach(function (member) {
+                var opt = document.createElement('option');
+                opt.value = member.toLowerCase();
+                opt.textContent = member;
+                catSelect.appendChild(opt);
+            })
+        }
+
+        var timerFunction = function () {
+            if (imageCounter == 1) {
+                galleryImg.src = "PhenomWoman.png";
+                imageCounter = 2;
+            }
+            else if (imageCounter == 2) {
+                galleryImg.src = "MelaninPoppin.jpg";
+                imageCounter = 3;
+            }
+            else if (imageCounter == 3) {
+                galleryImg.src = "GirlPower.jpg";
+                imageCounter = 1;
+            }
+
         }
 
         let subscribeRequest = function () {
-            prompt("Give us your email or else!!!", "my@email.com");
+            prompt("Subscribe to Newsletter Now to recieve Updates on Exclusive Merch and Discounts", "What's your email?");
         }
 
         window.addEventListener("load", function () {
@@ -85,68 +104,13 @@
             setInterval(imgChange, 3000);
         })
 
+        window.setInterval(timerFunction, 4000);
+
     </script>
+</body>
 
+</html>
 
-    <script>
-        var cuteAnimalCats = ["puppies", "kittens", "quokkas"];
-        var foodCats = ["coffee", "dessert", "cocktails", "muffins"];
-        var natureCats = ["forests", "beaches", "mountains"];
-
-        var groupSelect = document.getElementById("group");
-        var categorySelect = document.getElementById("category");
-
-        groupSelect.addEventListener('change', function () {
-            console.log(groupSelect.value);
-            if (groupSelect.value == 'cuteAnimals') {
-                fillCategory(cuteAnimalCats);
-            }
-            if (groupSelect.value == 'food') {
-                fillCategory(foodCats);
-            }
-            if (groupSelect.value == 'nature') {
-                fillCategory(natureCats);
-            }
-        });
-// creating options of caterory array//
-        var fillCategory = function (selection) {
-            categorySelect.innerHTML = "";
-            selection.forEach(element => {
-                var opt = document.createElement('option');
-                opt.value = element;
-                opt.textContent = element.charAt(0).toUpperCase() + element.slice(1);
-
-                categorySelect.appendChild(opt);
-            });
-        }
-    </script>
-
-
-    <script>
-        var quokkaImgs = ["quokkas1.jpg", "quokkas2.jpg", "quokkas3.jpg"];
-        var currentImg = 0;
-        var carouselImg = document.getElementById("carouselImg");
-
-        // add in all galleries //
-        window.setInterval(quokkaGallery, 3000);
-        window.setInterval(ForestGallery, 3000);
-
-
-        // changing images here USE THIS!!!!!!!!!!//
-        function quokkaGallery() {
-            var nextImg = currentImg + 1;
-            if (nextImg == quokkaImgs.length) nextImg = 0;
-            carouselImg.src = quokkaImgs[nextImg];
-            currentImg = nextImg;
-        }
-        function ForestGallery() {
-            var nextImg = currentImg + 1;
-            if (nextImg == quokkaImgs.length) nextImg = 0;
-            carouselImg.src = quokkaImgs[nextImg];
-            currentImg = nextImg;
-
-        }
-    </script>
 
 
 

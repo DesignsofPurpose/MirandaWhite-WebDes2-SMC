@@ -4,21 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href = "stylesheet.css" rel="styleSheet">
+    
     <title>Carousel and Arrays</title>
+
 </head>
 
 <body>
     <header>
-        <!-- !!!!!!!!CODE WORKS!!!!!!!!!! -->
         <!-- Turn into jumbotron -->
-        <div id="carousel">
-            <img src="MelaninMade.jpg" alt=" " id="carouselIMG">
-        </div>
+        <nav>
+            <div class="navbar">
+                <a class="active" href=" ">Home</a>
+                <a href=" ">Search</a>
+                <a href=" ">Contact</a>
+                <a href=" ">Login</a>
+            </div>
+        </nav>
+
+        <section class="flex-container">
+            <article class="bg-beige jumbotron">
+                <h1>Designs of Purpose</h1>
+                <h3> . . . make life more meaningful. </h3>
+            </article>
+        </section>
 
         <form>
             <label for="groupSelect">Group:</label>
             <select id="groupSelect">
-                <option></option>
                 <option value="merchMpwr">Empowerment Merch</option>
                 <option value="deskMpwr">Desk Empowerment</option>
                 <option value="wallArt">Wall Art</option>
@@ -26,7 +40,8 @@
 
             <label for="catSelect">Category:</label>
             <select id="catSelect">
-                <option></option>
+                <option value="MPWR T-shirts">MPWR T-shirts</option>
+                <option value="MPWR Lunch Boxes">MPWR Lunch Boxes</option>
             </select>
         </form>
     </header>
@@ -39,74 +54,8 @@
             <img src="MelaninMade.jpg" alt="cuteT" id="galleryImg">
         </div>
     </main>
+    <script src="script.js"></script>
 
-    <script>
-        var groupSelect = document.getElementById("groupSelect");
-        var catSelect = document.getElementById("catSelect");
-        var galleryImg = document.getElementById("galleryImg");
-
-        var merchMpwr = ["MPWR T-shirts", "MPWR Lunch Boxes"];
-        var deskMpwr = ["File Folders", "Calendars", "Journals"];
-        var wallArt = ["DOP Prints", "Typeface Prints"];
-
-        var imageCounter = 1;
-
-        groupSelect.addEventListener("change", function () {
-            console.log(groupSelect.value);
-
-            if (groupSelect.value == 'merchMpwr') {
-                fillCategory(merchMpwr);
-            }
-            else if (groupSelect.value == 'deskMpwr') {
-                fillCategory(deskMpwr);
-            }
-            else if (groupSelect.value == 'wallArt') {
-                fillCategory(wallArt);
-            }
-            else {
-                //for all other cases
-                catSelect.innerHTML = "";
-            }
-        })
-
-        var fillCategory = function (catArray) {
-            catSelect.innerHTML = "";
-            catArray.forEach(function (member) {
-                var opt = document.createElement('option');
-                opt.value = member.toLowerCase();
-                opt.textContent = member;
-                catSelect.appendChild(opt);
-            })
-        }
-
-        var timerFunction = function () {
-            if (imageCounter == 1) {
-                galleryImg.src = "PhenomWoman.png";
-                imageCounter = 2;
-            }
-            else if (imageCounter == 2) {
-                galleryImg.src = "MelaninPoppin.jpg";
-                imageCounter = 3;
-            }
-            else if (imageCounter == 3) {
-                galleryImg.src = "GirlPower.jpg";
-                imageCounter = 1;
-            }
-
-        }
-
-        let subscribeRequest = function () {
-            prompt("Subscribe to Newsletter Now to recieve Updates on Exclusive Merch and Discounts", "What's your email?");
-        }
-
-        window.addEventListener("load", function () {
-            setTimeout(subscribeRequest, 4000);
-            setInterval(imgChange, 3000);
-        })
-
-        window.setInterval(timerFunction, 4000);
-
-    </script>
 </body>
 
 </html>

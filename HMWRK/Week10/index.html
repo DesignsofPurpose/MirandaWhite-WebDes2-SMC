@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="stylesheet.css">
 
-    <title>Toggle Img SRC</title>
+    <title>HMWRK Toggle Img SRC</title>
+
+
+    <style>
+        body {
+            background-color: black;
+            color: whitesmoke;
+            margin: 0px;
+        }
+
+        header {
+            height: auto;
+        }
+    </style>
+
+
 </head>
-
-<style>
-    body {
-        background-color: black;
-        color: whitesmoke;
-        margin: 0px;
-    }
-
-    header {
-        height: auto;
-    }
-</style>
-
 
 <body>
     <header id="myHeader">
         <button id="colorBTN">Change the color!</button><br>
 
 
-        <nav>
+        <div>
 
-            <div id="myNav">
+            <nav id="myNav">
                 <img src="Ivy_park_logo.webp" class="logo" alt="company logo">
 
 
@@ -65,26 +68,10 @@
 
 
                 </ul>
-        </nav>
+            </nav>
+        </div>
     </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     <main>
         <div class="row">
             <div class="column">
@@ -107,40 +94,18 @@
             </div>
         </div>
 
+    </main>
 
-        <button onclick="myFunction()">Next Image</button>
+    
+        <img src="pexels-lisa-3586766.jpg" alt="Black Hair Img1" alt="polaroid1" id="displayIMG" style="width:40%"
+            onclick="myFunction(this);">
+        <br> <br>
+        <button id="toggleBTN" onclick="myFunction()"> Show the second one!</button>
+    
 
-
-
-
-        <div id="myDIV1">
-            <img src="pexels-lisa-2846828.jpg" id="fix" alt="sisters" width="500" height="600">
-            <br>
-            
-        </div>
-
-        <div id="myDIV2">
-            <img src="pexels-matheus-bertelli-4085685.jpg" id="fix" alt="youngest" width="500" height="600">
-            <br>
-            
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
-
-</main>
 
 <footer>
 

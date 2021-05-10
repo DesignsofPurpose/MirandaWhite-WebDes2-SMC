@@ -1,0 +1,18 @@
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+    div.example {
+      font-size: 80px;
+    }
+  }
+  @media (min-width:1024px){
+    .flex-container{
+        width: 0px;
+        margin: 20px auto 20px;
+    }
+}
+@media screen {
+    body {
+      color: green;
+    }
+  }
+   

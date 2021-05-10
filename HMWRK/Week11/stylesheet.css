@@ -1,44 +1,37 @@
- /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
- @media screen and (max-width: 500px) {
-    .navbar a {
-      float: center;
-      display: block;
-      width: 100%;
-      text-align: left; /* If you want the text to be left-aligned on small screens */
-    }
-  }
-  @media (min-width: 768px){
-    .w-md-50 {
-        width:33%;}
-    }
+ /*     font-family: 'Dancing Script', cursive;
 
-@media (min-width:1024px){
-    .flex-container{
-            width: 1024px;
-            margin: 0px auto 20px;
-        }
-    
+    font-family: 'Lato', sans-serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Raleway', sans-serif;
+
+    font-family: 'Roboto', sans-serif; */
+ 
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+ 
+
+ 
   
+/* Nav Menu */
 
-        nav ul{
-            list-style: none;
-            padding-left: 0px;
-            list-style: none;
-            padding-left: 0px;
-            
-        }
-        nav ul a{
-            color: black;
-            text-decoration: none;
-        }
-        nav{
-            padding: 10px;
-            text-align: center;
-            list-style: center;
-            list-style-position: inside;
-            list-style-image: none;
-            list-style-type: center;
-          }
+
+nav ul a{
+    color: lavenderblush;
+    text-decoration: whitesmoke;
+    }
+
+nav{
+    padding: 20px;
+    padding-left: 5px;
+    text-align: end;
+    list-style: center;        list-style-position: inside;
+    list-style-image: none;        list-style-type: center;
+    font-size: 30px;
+    }
           
           nav li {
             line-height: 87px;
@@ -46,8 +39,6 @@
             text-align: center;
             width: 150px;
           }
-
-
 
 
 
@@ -61,37 +52,37 @@
 
 .jumbotron h1,
 .jumbotron h3 {
-color: rgb(241, 155, 42);
-padding-left: 10%;
+color: rgb(59, 95, 83);
+padding: 10px;
 }
 
 body {
-    background-color: beige;
+    background-color: rgb(238, 218, 238);
     color: rgb(255, 192, 203);
   }
   
   h1 {
     background-color:transparent;
     font-family: 'Montserrat';
-    font-size: 50px;
+    font-size: 75px;
   }
   h3 {
-      color: ;
-      font-family: 'sans-serif';
-      font-size: 25px;
+      color: blue;
+      font-family: 'Dancing Script', cursive;
+      align-content: center;
+      font-size: 40px;
   }
   p {
-      font-family: monospace;
+      font-family: 'montserrat';
       font-size: 20px;
   }
 
- 
-}
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0px;
-    align-content: right1   ;
+    align-content: center;
 }
 
 .flex-container > * {
@@ -102,7 +93,6 @@ body {
     margin: 10px;
 }
 
-}
 .segment {
     margin: 10px;
 }
@@ -122,4 +112,50 @@ article{
     height: 200px;
     border: 3px solid green;
   }
+
+  /* Toggle Menu */
+
+
+#main-navigation label {
+    display: block;
+    cursor: pointer;
+    float: inline-start;
+    font-size: 26px;
+    margin: 18px 31.5px;
+  }
+
+  #main-navigation {
+    display: block;
+  }
+
+  #main-navigation a {
+    display: block;
+    padding: 3px;
+    font-size: 14.5px;
+    text-align: center;
+    clear: right;
+  }
+
+  ul {
+    display: none;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    transition: 800ms;
+  }
+
+  input[type=checkbox]:checked~ul {
+  display: inline-table;
+}
+
+#menutoggle {
+    height: 75px;
+    float: inline-start;
+    display: none;
+}
+
+  #menutoggle checked + ul {
+    display: block;
+}
+
+
 

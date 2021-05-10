@@ -4,29 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href = "stylesheet.css" rel="styleSheet">
-    
+
+    <link href="stylesheet.css" rel="styleSheet">
+    <link href="smallscreen.css" rel="smallSCRNstyleSheet">
+    <link href="widescreen.css" rel="wideSCRNSheet">
+
     <title>Carousel and Arrays</title>
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+    </style>
 </head>
 
 <body>
     <header>
-        <!-- Turn into jumbotron -->
         <nav>
-            <div class="navbar">
-                <a class="active" href=" ">Home</a>
-                <a href=" ">Search</a>
-                <a href=" ">Contact</a>
-                <a href=" ">Login</a>
+            <div id="main-navigation"> </div>
+            <!-- Turn into jumbotron -->
+            <label for="menutoggle">
+                <img id="togglebutton" src="DŌP by RANDi.png " alt="menu toggle button" />
+            </label>
+            <input id="menutoggle" type="checkbox" />
+
+            <div>
+                <ul class="navbar">
+                    <a class="active" href=" ">Home</a>
+                    <a href=" ">Search</a>
+                    <a href=" ">Contact</a>
+                    <a href=" ">Login</a>
+                </ul>
             </div>
         </nav>
 
         <section class="flex-container">
             <article class="bg-beige jumbotron">
                 <h1>Designs of Purpose</h1>
-                <h3> . . . make life more meaningful. </h3>
+                <h3> make life more meaningful. </h3>
             </article>
         </section>
 

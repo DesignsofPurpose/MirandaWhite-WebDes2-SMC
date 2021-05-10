@@ -21,19 +21,19 @@ let toggleTheImage = function () {
 
     if (tgglBTN.innerText === "Show the second one!") {
         console.log("show the second image");
-        BlackHairImg.src = "Img2.jpg";
+        BlackHairImg.src = "https://images.pexels.com/photos/2171133/pexels-photo-2171133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
         tgglBTN.innerText = "Show the third one!";
         return;
     }
     if (tgglBTN.innerText === "Show the third one!") {
         console.log("show the third image");
-        BlackHairImg.src = "Img3.jpg";
+        BlackHairImg.src = "https://images.pexels.com/photos/2528333/pexels-photo-2528333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940";
         tgglBTN.innerText = "Show the fourth one!";
         return;
     }
     if (tgglBTN.innerText === "Show the fourth one!") {
         console.log("show the fourth image");
-        BlackHairImg.src = "Img4.jpg";
+        BlackHairImg.src = "https://images.pexels.com/photos/2437835/pexels-photo-2437835.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
         tgglBTN.innerText = "Show the first one!";
         return;
     }

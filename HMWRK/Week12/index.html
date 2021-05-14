@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="stylesheet.css" rel="styleSheet">
-    <link href="smallscreen.css" rel="smallSCRNstyleSheet">
-    <link href="widescreen.css" rel="wideSCRNSheet">
+    <link href="media.css" rel="styleSheet">
 
     <title>Week 12</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+    </style>
+
+
+    <style>
+        div {
+            background: #de9a44;
+            margin: 3px;
+            width: 80px;
+            height: 40px;
+            display: none;
+            float: left;
+        }
     </style>
 </head>
 
@@ -20,12 +31,12 @@
     <header>
         <nav>
             <div id="main-navigation">
-            <!-- Turn into jumbotron -->
-            <label for="menutoggle">
-                <img id="togglebutton" src="DŌP by RANDi.png " alt="menu toggle button" />
-            </label>
-            <input id="menutoggle" type="checkbox" />
-    
+                <!-- Turn into jumbotron -->
+                <label for="menutoggle">
+                    <img id="togglebutton" src="DŌP by RANDi.jpg " alt="menu toggle button" />
+                </label>
+                <input id="menutoggle" type="checkbox" />
+
                 <ul class="navbar">
                     <a class="active" href=" ">Home</a>
                     <a href=" ">Search</a>
@@ -36,19 +47,20 @@
         </nav>
 
         <section class="flex-container">
-            <article class="bg-beige jumbotron">
+            <article class="jumbotron">
                 <h1>Designs of Purpose</h1>
                 <h3> make life more meaningful. </h3>
             </article>
         </section>
-
-        <form>
+        <br>
+        <form class="form">
             <label for="groupSelect">Group:</label>
             <select id="groupSelect">
                 <option value="merchMpwr">Empowerment Merch</option>
                 <option value="deskMpwr">Desk Empowerment</option>
                 <option value="wallArt">Wall Art</option>
             </select>
+
 
             <label for="catSelect">Category:</label>
             <select id="catSelect">
@@ -58,7 +70,7 @@
         </form>
     </header>
 
-    <hr>
+    <!-- <hr> -->
 
 
     <main>
@@ -66,29 +78,64 @@
             <img src="GirlPower.jpg" alt="cuteT" id="galleryImg">
         </div>
 
+
+
+        <div>
+            <section class="flex-container">
+                <article class="bg screen50">
+                    <p class="segment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum libero maxime
+                        unde quibusdam nisi, ea, totam iste atque accusantium provident quod ad inventore? Ad quia quo
+                        minima assumenda. Nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                        eaque veritatis nihil consequatur, veniam sint dolore ab sed, impedit eveniet repudiandae
+                        deserunt quas culpa hic sequi dolor maxime minima ratione! (<a href="#">click!</a>)
+                    </p>
+                </article>
+            </section>
+        </div>
+
+        <div><span>CENSORED!</span></div>
+
+        <div id="clickme">
+            Click here
+        </div>
+        <img id="book" src="GirlPower.jpg" alt="" width="100" height="123">
+
+        Click me!
+        <div></div>
+        <div></div>
+        <div></div>
+
+
         <br> <br>
 
         <div class="row">
             <div class="column">
-                <img src="https://images.pexels.com/photos/2346449/pexels-photo-2346449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" id="imgs" width=20% onclick="myFunction(this);">
+                <img src="https://images.pexels.com/photos/2346449/pexels-photo-2346449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="" id="imgs" width=20% onclick="myFunction(this);">
             </div>
 
             <div class="column">
-                <img src="https://images.pexels.com/photos/2171133/pexels-photo-2171133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" id="imgs"  width=20% onclick="myFunction(this);">
+                <img src="https://images.pexels.com/photos/2171133/pexels-photo-2171133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="" id="imgs" width=20% onclick="myFunction(this);">
             </div>
 
             <div class="column">
-                <img src="https://images.pexels.com/photos/2171133/pexels-photo-2171133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" id="imgs" width=20% onclick="myFunction(this);">
+                <img src="https://images.pexels.com/photos/2224220/pexels-photo-2224220.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" id="imgs" width=20% onclick="myFunction(this);">
             </div>
 
             <div class="column">
-                <img src="https://images.pexels.com/photos/2171133/pexels-photo-2171133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" id="imgs" width=20% onclick="myFunction(this);">
+                <img src="https://images.pexels.com/photos/2115562/pexels-photo-2115562.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" id="imgs" width=20% onclick="myFunction(this);">
             </div>
 
             <button id="toggleBTN">Show the second one!</button>
 
- 
+
         </div>
+
+
+
 
 
 
@@ -98,6 +145,33 @@
 
 
     </main>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
+    <script>
+        $(document.body).click(function () {
+            if ($("div").first().is(":hidden")) {
+                $("div").slideDown("slow");
+            } else {
+                $("div").hide();
+            }
+        });
+
+
+        $("#clickme").click(function () {
+            $("#book").slideDown("slow", function () {
+                // Animation complete.
+            });
+        });
+    </script>
+
+
     <script src="script.js"></script>
 
 </body>

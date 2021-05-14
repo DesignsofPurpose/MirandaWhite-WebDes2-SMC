@@ -27,12 +27,12 @@ ul.nav-links {
         width: 12vw;
     }
     .li{
-        display:none;
+        display: inline-block;
     }
     .toggle-button {
 
 
-        display: none;
+        display: block;
         width: 200px;
         height: 100px;
 

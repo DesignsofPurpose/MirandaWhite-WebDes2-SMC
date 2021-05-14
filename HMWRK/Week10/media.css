@@ -2,3 +2,41 @@
 
 
 
+      @media(min-width: 768px) {
+        .flex-container img {
+            width: 12vw;
+        }
+
+        .ul {
+            display: none;
+        }
+
+        .toggleAssist {
+
+
+            display: none;
+            width: 100px;
+            height: 100px;
+
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .flex-container img {
+            width: 100%;
+        }
+
+    }
+
+    @media (min-width: 768px) {
+
+
+        .toggle-button {
+
+
+            display: none;
+            width: 200px;
+            height: 100px;
+
+        }
+    }

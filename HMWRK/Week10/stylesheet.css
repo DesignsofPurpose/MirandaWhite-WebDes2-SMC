@@ -273,10 +273,6 @@ align: center;
 
       /* added css menu from last week */
 
-#toggleAssist,
-ul.nav-links {
-  display: none;
-  }
 
 
 .logo {
@@ -288,60 +284,22 @@ ul.nav-links {
 }
 
 
-      #BlackHairImg{
-          width: 500px;
-          height: 400px;
-          
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              width: 50%;
-          
-      }
+#BlackHairImg{
+  width: 500px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;          
+}
 
 
-      #toggleAssist:checked+li.nav-links {
+#toggleAssist:checked+li.nav-links {
+  display: block;
+}
 
+#toggleAssist,
+ul.nav-links {
+  display: none;
+}
 
-          display: block;
-
-      }
-
-      @media(min-width: 768px) {
-          .flex-container img {
-              width: 12vw;
-          }
-
-          .ul {
-              display: none;
-          }
-
-          .toggleAssist {
-
-
-              display: none;
-              width: 100px;
-              height: 100px;
-
-          }
-      }
-
-      @media (min-width: 1024px) {
-          .flex-container img {
-              width: 100%;
-          }
-
-      }
-
-      @media (min-width: 768px) {
-
-
-          .toggle-button {
-
-
-              display: none;
-              width: 200px;
-              height: 100px;
-
-          }
-      }

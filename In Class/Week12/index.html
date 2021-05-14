@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to jQuery Week 12</title>
+
+    <link href="" rel="">
+</head>
+
+<body>
+    <p id="myP">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic mollitia quidem nesciunt earum laboriosam
+        aspernatur ipsam officiis odio dolore, eum debitis, eaque facere possimus, id beatae fugit sunt nihil totam!
+    </p>
+
+    <button id="addMore"> add another line</button>
+    <button id="removeSome">Remove Clones</button>
+
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- <script> -->
+    let addTextB = documnet.getElementbyID("addMore");
+    let textP = document.getElementById("myP")
+
+    add TextB.addEventListener("click", function(){
+    let conententP = textP.innerText;
+
+    let newP = document.createElement('p');
+    newP.innerText = contentP;
+    document.getElementByID("paragraphs").appendchild(newP);
+
+    })
+
+    <script>
+        $("#addMore").click(function(){
+            let cloneP = $("#myP").clone();
+            cloneP.addClass("cloned");
+            // $("#paragraphs").append( $("#myP").colne() );
+            
+            $("#paragraphs").append($("#myP").clone(P));
+        })
+        $("#removeSome".click(function () {
+            $
+        }))
+    </script>
+
+</body>
+
+</html>

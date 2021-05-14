@@ -1,4 +1,4 @@
- /*     font-family: 'Dancing Script', cursive;
+/*     font-family: 'Dancing Script', cursive;
 
     font-family: 'Lato', sans-serif;
 
@@ -15,14 +15,11 @@
  
 
  
-  
+#togglebutton{
+ 
+}
+
 /* Nav Menu */
-
-
-nav ul a{
-    color: lavenderblush;
-    text-decoration: whitesmoke;
-    }
 
 nav{
     padding: 20px;
@@ -33,14 +30,24 @@ nav{
     list-style-image: none;        
     list-style-type: center;
     font-size: 30px;
-    }
-          
-          nav li {
-            line-height: 87px;
-            float: left;
-            text-align: center;
-            width: 150px;
-          }
+}
+
+nav ul a{
+    color: green;
+    text-decoration: whitesmoke;
+    line-height: 87px;
+    float: left;
+    text-align: center;
+    width: 150px;
+} 
+
+nav ul {
+    line-height: 7px;
+    float: left;
+    text-align: center;
+    width: ;
+    
+}
 
 
 
@@ -59,8 +66,8 @@ padding: 10px;
 }
 
 body {
-    background-color: rgb(238, 218, 238);
-    color: rgb(255, 192, 203);
+    background-color: beige;
+    color: green;
   }
   
   h1 {
@@ -89,10 +96,6 @@ body {
 
 .flex-container > * {
     width: 100%;
-}
-
-.segment {
-    margin: 10px;
 }
 
 .segment {
@@ -159,5 +162,12 @@ article{
     display: block;
 }
 
-
+.imgs{
+    min-width: 20%;
+    min-height: 30%;
+}
+div.row{
+    min-width: 20%;
+    min-height: 30%;
+}
 

@@ -1,0 +1,16 @@
+@import url("colors.css");
+@import url("navbar.css");
+
+body {
+    margin: 20px;
+}
+
+#span1{
+    flex-grow: 2; /* default 0 */
+}
+
+.container {
+    align-content: 20%;
+    display: flex;
+
+}

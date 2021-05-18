@@ -64,3 +64,57 @@ var groupSelect = document.getElementById("groupSelect");
         window.setInterval(timerFunction, 4000);
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // $("#hideImg1").click(function(){
+        //     $("#img1 img").fadeToggle();
+        //  });
+    
+        //  $("#hideImg2").click(function(){
+        //     $("#img2 img").fadeToggle();
+        //  });
+    
+        //  $("#hideImg3").click(function(){
+        //     $("#img3 img").fadeToggle();
+        //  });
+    
+        //  $("#hideImg4").click(function(){
+        //     $("#img4 img").fadeToggle();
+        //  });
+    
+    
+    
+        //  $("#addMore").click(function(){
+        //    $( "#gridContainer" ).append( $( '<img id="img5" src="deskMock.jpg" />' ) );
+    
+        //     //$("#paragraphs").append( $("#myP").clone());
+        // });
+    
+        // $("#addLess").click(function(){
+        //     $( "#img5" ).remove();
+        //     //$("#paragraphs").append( $("#myP").clone());
+        // });
+    
+         
+    

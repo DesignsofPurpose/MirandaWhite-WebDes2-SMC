@@ -2,136 +2,210 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="stylesheet.css" rel="styleSheet">
+  <link href="media.css" rel="styleSheet">
+  <title>Week 12 Manipulate HTML elements using jQuery</title>
 
-    <link href="stylesheet.css" rel="styleSheet">
-    <link href="media.css" rel="styleSheet">
-
-    <title>Week 12</title>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
-    </style>
-
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
+</style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div id="main-navigation">
-                <!-- Turn into jumbotron -->
-                <label for="menutoggle">
-                    <img id="togglebutton" src="DŌP by RANDi.jpg " alt="menu toggle button" />
-                </label>
-                <input id="menutoggle" type="checkbox" />
 
-                <ul class="navbar">
-                    <a class="active" href=" ">Home</a>
-                    <a href=" ">Search</a>
-                    <a href=" ">Contact</a>
-                    <a href=" ">Login</a>
-                </ul>
-            </div>
-        </nav>
+  <header>
+    <nav class="flex">
+      <div id="main-navigation bg-pink">
+        <a href="#" class="logo-container"><img class="logo" alt="flower logo" src="images-73.jpg"
+            style="width:500px"></a>
 
-        <section class="flex-container">
-            <article class="jumbotron">
-                <h1>Designs of Purpose</h1>
-                <h3> make life more meaningful. </h3>
-            </article>
-        </section>
-        <br>
-        <form class="form">
-            <label for="groupSelect">Group:</label>
-            <select id="groupSelect">
-                <option value="merchMpwr">Empowerment Merch</option>
-                <option value="deskMpwr">Desk Empowerment</option>
-                <option value="wallArt">Wall Art</option>
-            </select>
-
-
-            <label for="catSelect">Category:</label>
-            <select id="catSelect">
-                <option value="MPWR T-shirts">MPWR T-shirts</option>
-                <option value="MPWR Lunch Boxes">MPWR Lunch Boxes</option>
-            </select>
-        </form>
-    </header>
-
-    <!-- <hr> -->
-
-
-    <main>
-        <div id="gallery">
-            <img src="GirlPower.jpg" alt="cuteT" id="galleryImg">
-        </div>
-
-
-
-        <div>
-            <section class="flex-container">
-                <article class="bg screen50">
-                    <p class="segment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum harum libero maxime
-                        unde quibusdam nisi, ea, totam iste atque accusantium provident quod ad inventore? Ad quia quo
-                        minima assumenda. Nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-                        eaque veritatis nihil consequatur, veniam sint dolore ab sed, impedit eveniet repudiandae
-                        deserunt quas culpa hic sequi dolor maxime minima ratione! 
-                        
-                        
-                        
-                        <!-- (<a href="#">click!</a>) -->
-
-                        <button id="toggleBTN"><a href="#"><h3>click!</h3></a></button>
-
-
-                    </p>
-                </article>
-            </section>
-        </div>
-
-        <div><span>CENSORED!</span></div>
-
-        <br> <br>
-
-        <div class="row">
-            <div class="column">
-                <img src="https://images.pexels.com/photos/2346449/pexels-photo-2346449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    alt="" id="imgs" width=20% onclick="myFunction(this);">
-            </div>
-
-            <div class="column">
-                <img src="https://images.pexels.com/photos/2171133/pexels-photo-2171133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                    alt="" id="imgs" width=20% onclick="myFunction(this);">
-            </div>
-
-            <div class="column">
-                <img src="https://images.pexels.com/photos/2224220/pexels-photo-2224220.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="" id="imgs" width=20% onclick="myFunction(this);">
-            </div>
-
-            <div class="column">
-                <img src="https://images.pexels.com/photos/2115562/pexels-photo-2115562.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="" id="imgs" width=20% onclick="myFunction(this);">
-            </div>
-
-            <button id="toggleBTN">Show the second one!</button>
-
-
-        </div>
-
-    </main>
-
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+        <ul class="navbar">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
 
 
 
+
+
+
+  <main>
+    <div class="long-ps">
+      <p id="someP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore voluptatibus
+        distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia atque
+        earum
+        laudantium aliquid!</p>
+
+      <p class="long-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore
+        voluptatibus distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque.
+        Quia
+        atque earum laudantium aliquid!</p>
+    </div>
+
+
+
+
+    <button id="clickB">Click Me to add another</button>
+    <button id="clickR">Click Me to remove some</button>
+
+    
+
+
+
+    <div id="gridContainer" class="images" class="row">
+    
+      <div id="img1" class="column">
+        <img
+          src="https://images.pexels.com/photos/2346449/pexels-photo-2346449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="" class="hideable-img" id="imgs" width=20% onclick="myFunction(this);"><br>
+          <button id="hideImg1">Toggle Image</button></div>
+      </div>
+
+      <div id="img2" class="column">
+        <img
+          src="https://images.pexels.com/photos/2171133/pexels-photo-2171133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="" class="hideable-img" id="imgs" width=20% onclick="myFunction(this);"><br>
+          <button id="hideImg2">Toggle Image</button></div>
+      </div>
+
+      <div id="img3" class="column">
+        <img
+          src="https://images.pexels.com/photos/2224220/pexels-photo-2224220.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt="" class="hideable-img" id="imgs" width=20% onclick="myFunction(this);">
+          <button id="hideImg3">Toggle Image</button></div>
+      </div>
+
+      <div id="img4" class="column">
+        <img
+          src="https://images.pexels.com/photos/2115562/pexels-photo-2115562.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+          alt="" class="hideable-img" id="imgs" width=20% onclick="myFunction(this);">
+          <button id="hideImg4">Toggle Image</button></div>
+      </div>
+
+      <button class="btn" id="fadeToggleBtn">Fade Image </button>
+      <button class="btn" id="hideBtn">Hide Images</button>
+      <button class="btn" id="toggleBtn">Click to Toggle All Images</button>
+
+
+      <br><br><br>
+      <div id="loadMore">
+        <button id="addMore">Load More Images</button>
+    </div>
+    <div id="loadLess">
+        <button id="addLess">Clear Added Images</button>
+    </div>
+    <br><br><br>
+  
+      <!-- <button id="fadeOutBtn">Click me to fade the images out</button> -->
+  
+      <!-- <button id="slideUpBtn">Click me to side the images up and away</button> -->
+  
+      <!-- <button id="customAnim">Click me for a custom animation</button> -->
+  
+
+
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js">
+   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="script.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      //everything should go in here!!!
+      $("#clickB").click(function () {
+        $(".long-ps").append(
+          '<p class="long-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore voluptatibus distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia atque earum laudantium aliquid!</p>'
+        );
+      });
+
+      $("#clickR").click(function () {
+        $('.long-paragraph').remove();
+      })
+
+      $("#hideBtn").click(function () {
+        $('.hideable-img').hide();
+      })
+
+      $("#toggleBtn").click(function () {
+        $('.hideable-img').toggle();
+      })
+
+      $("#fadeOutBtn").click(function () {
+        $('.hideable-img').fadeOut(4000, function () {
+          $(".images").append('<h1>Image Hidden Now!</h1>')
+        });
+      })
+
+      $("#fadeToggleBtn").click(function () {
+        $('.hideable-img').fadeToggle(2000);
+      })
+
+      $("#slideUpBtn").click(function () {
+        $('.hideable-img').slideUp(2000);
+      })
+
+      $('#customAnim').click(function () {
+        $('.hideable-img').animate({
+          height: "0px",
+          width: "920px",
+          marginBottom: "657px"
+        }, 2000);
+      })//end of customAnim click
+
+    })//end of document ready
+
+
+
+
+
+
+
+
+
+
+
+    $("#hideImg1").click(function(){
+            $("#img1 img").fadeToggle();
+         });
+    
+         $("#hideImg2").click(function(){
+            $("#img2 img").fadeToggle();
+         });
+    
+         $("#hideImg3").click(function(){
+            $("#img3 img").fadeToggle();
+         });
+    
+         $("#hideImg4").click(function(){
+            $("#img4 img").fadeToggle();
+         });
+    
+    
+    
+         $("#addMore").click(function(){
+           $( "#gridContainer" ).append( $( '<img id="img5" src="DŌP by RANDi.jpg" />' ) );
+    
+            //$("#paragraphs").append( $("#myP").clone());
+        });
+    
+        $("#addLess").click(function(){
+            $( "#img5" ).remove();
+            //$("#paragraphs").append( $("#myP").clone());
+        });
+
+
+
+  </script>
 </body>
 
 </html>

@@ -8,6 +8,18 @@
     }
   }
 
+  @media(min-width: 500px) {
 
+  }
+  
+  @media(min-width: 960px){
+      nav.flex {
+          flex-direction: column;
+          justify-content: space-between;
+      }
 /* jQuery */
- 
+
+
+
+
+    

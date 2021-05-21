@@ -5,12 +5,45 @@ body {
     margin: 20px;
 }
 
-#span1{
-    flex-grow: 2; /* default 0 */
+
+.flexbox-container{
+    height: none;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
 
-.container {
-    align-content: 20%;
-    display: flex;
+
+.flexbox-item{
+    /* width: 200px;
+    margin: 10px; */
+    /* border: 3px solid pink;
+    background-color: peachpuff; */
+}
+.flexbox-item-1{
+    min-height: 100px;
+    
+}
+.flexbox-item-2{
+    min-height: 100px;
+   
+}
+.flexbox-item-3{
+    min-height: 100px;
 
 }
+.flexbox-item-4{
+    min-height: 100px;
+    flex-grow: 1;
+}
+.flexbox-item-5{
+    min-height: 100px;
+    
+}
+
+    /* align-content: none;
+    flex-wrap: wrap;
+    flex-basis: 0; 
+    align-self: center (overwrites);
+    order: 2; (changes order visually)*/

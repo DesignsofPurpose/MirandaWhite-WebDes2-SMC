@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery UI example</title>
+
+    <link rel="stylsheet" href="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+<style>
+    .draggable-comp {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .checkout-area {
+        min-height: 300px;
+        border: 1px solid darkgrey;
+
+    }
+</style>
+
+</head>
+
+<body>
+
+    <div class="jqueryUI-tabs">
+        <ul>
+            <li><a href="food">Food</a></li>
+            <li><a href="nature">Nature</a></li>
+            <li><a href="animals">Animals</a></li>
+        </ul>
+
+        <div id="food">
+            <p> food will be here</p>
+        </div>
+
+        <div id="nature">
+            <p> food will be here</p>
+        </div>
+
+        <div id="animals">
+            <p> food will be here</p>
+        </div>
+        <div class="checkout-area">
+            <h2>Drop your selection here.</h2> 
+            <h3> selected: <span id="selectCount">0</span></h3>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"> </script>
+
+    <srcipt>
+        $(document).ready(function(){
+            $('.jqueryUI-tabs').tabs();
+            collaspsible: true,
+            event: "click"
+            });
+            let alreadyAdded = [];
+            let myTabs = 
+        });
+
+
+
+        myTabs.find(".ui-tabs-nav").sortable({
+            axis: "x",
+            stop: function(){myTabs.tabs("refresh")}
+            });
+        });
+        $(".draggable-comp").draggable();
+        $(".checkout-area").droppable({
+            drop: function(event,ui)}
+            console.log(event);
+            console.log(ui;)
+                $(this).accClass("ui-state-highlight")
+            }
+
+            
+            $('#selectCount').text(count);
+
+
+
+        })
+        <!-- closed the ready() function -->
+        });
+
+    </srcipt>
+
+
+</body>
+
+</html>
+
+
+<!-- load CSS then load Js -->
+import jquery-ui.css (might not need any other file)

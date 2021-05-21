@@ -10,62 +10,129 @@
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lato&family=Montserrat&family=Open+Sans&family=Raleway&family=Roboto&display=swap');
-</style>
+
+    .flex-container {
+      display: inline;
+      flex-wrap: nowrap;
+      float: left;
+      background-color: DodgerBlue;
+    }
+
+    .flex-container>div {
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+      display: inline;
+      flex-wrap: nowrap;
+      float: left;
+    }
+
+
+
+
+
+
+    .body {
+  font-family: "Open Sans";
+}
+
+.menubar {
+    background: rgb(228, 6, 19);
+    box-shadow: 0 1px 3px #999;
+    font-family: inherit;
+}
+
+.menubar ul {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menubar ul li {
+  display: inline;
+  list-style: none;
+}
+
+.menubar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0 15px 0 0;
+  font-family: "Open Sans"
+}
+
+.logo img {
+  width:220px;
+  vertical-align: middle;
+}
+.menubar ul li {
+    display: inline-block;
+    width: 220px;
+    list-style: none;
+    vertical-align: middle;
+}
+  </style>
 </head>
 
 <body>
 
-  <header>
-    <nav class="flex">
-      <div id="main-navigation bg-pink">
-        <a href="#" class="logo-container"><img class="logo" alt="flower logo" src="images-73.jpg"
-            style="width:500px"></a>
+  </head>
 
-        <ul class="navbar">
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">Search</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
-        </ul>
+  <body>
+
+    <header>
+      <nav class="flex-container menubar">
+        <div id="navmenu main-navigation bg-pink">
+          <a href="#" class="logo-container"><img class="logo" alt="flower logo" src="images-73.jpg"
+              style="width:500px"></a>
+
+          <ul class="navbar">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+    <main>
+      <div class="long-ps">
+        <p id="someP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore voluptatibus
+          distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia atque
+          earum
+          laudantium aliquid!</p>
+
+        <p class="long-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore
+          voluptatibus distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque.
+          Quia
+          atque earum laudantium aliquid!</p>
       </div>
-    </nav>
-  </header>
+
+
+
+
+      <button id="clickB">Click Me to add another</button>
+      <button id="clickR">Click Me to remove some</button>
 
 
 
 
 
+      <div id="gridContainer" class="images" class="row">
 
-
-  <main>
-    <div class="long-ps">
-      <p id="someP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore voluptatibus
-        distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia atque
-        earum
-        laudantium aliquid!</p>
-
-      <p class="long-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore
-        voluptatibus distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque.
-        Quia
-        atque earum laudantium aliquid!</p>
-    </div>
-
-
-
-
-    <button id="clickB">Click Me to add another</button>
-    <button id="clickR">Click Me to remove some</button>
-
-    
-
-
-
-    <div id="gridContainer" class="images" class="row">
-    
-      <div id="img1" class="column">
-        <img
-          src="https://images.pexels.com/photos/2346449/pexels-photo-2346449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-          alt="" class="hideable-img" id="imgs" width=20% onclick="myFunction(this);"><br>
+        <div id="img1" class="column">
+          <img
+            src="https://images.pexels.com/photos/2346449/pexels-photo-2346449.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="" class="hideable-img" id="imgs" width=20% onclick="myFunction(this);"><br>
           <button id="hideImg1">Toggle Image</button></div>
       </div>
 
@@ -73,21 +140,21 @@
         <img
           src="https://images.pexels.com/photos/2171133/pexels-photo-2171133.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="" class="hideable-img" id="imgs" width=20% onclick="myFunction(this);"><br>
-          <button id="hideImg2">Toggle Image</button></div>
+        <button id="hideImg2">Toggle Image</button></div>
       </div>
 
       <div id="img3" class="column">
         <img
           src="https://images.pexels.com/photos/2224220/pexels-photo-2224220.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           alt="" class="hideable-img" id="imgs" width=20% onclick="myFunction(this);">
-          <button id="hideImg3">Toggle Image</button></div>
+        <button id="hideImg3">Toggle Image</button></div>
       </div>
 
       <div id="img4" class="column">
         <img
           src="https://images.pexels.com/photos/2115562/pexels-photo-2115562.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           alt="" class="hideable-img" id="imgs" width=20% onclick="myFunction(this);">
-          <button id="hideImg4">Toggle Image</button></div>
+        <button id="hideImg4">Toggle Image</button></div>
       </div>
 
       <button class="btn" id="fadeToggleBtn">Fade Image </button>
@@ -98,114 +165,114 @@
       <br><br><br>
       <div id="loadMore">
         <button id="addMore">Load More Images</button>
-    </div>
-    <div id="loadLess">
+      </div>
+      <div id="loadLess">
         <button id="addLess">Clear Added Images</button>
-    </div>
-    <br><br><br>
-  
+      </div>
+      <br><br><br>
+
       <!-- <button id="fadeOutBtn">Click me to fade the images out</button> -->
-  
+
       <!-- <button id="slideUpBtn">Click me to side the images up and away</button> -->
-  
+
       <!-- <button id="customAnim">Click me for a custom animation</button> -->
-  
 
 
 
-  </main>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.js">
-   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="script.js"></script>
+    </main>
 
-  <script>
-    $(document).ready(function () {
-      //everything should go in here!!!
-      $("#clickB").click(function () {
-        $(".long-ps").append(
-          '<p class="long-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore voluptatibus distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia atque earum laudantium aliquid!</p>'
-        );
+    <script src="https://code.jquery.com/jquery-3.5.1.js">
+      src = "https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+          //everything should go in here!!!
+          $("#clickB").click(function () {
+            $(".long-ps").append(
+              '<p class="long-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore voluptatibus distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia atque earum laudantium aliquid!</p>'
+            );
+          });
+
+          $("#clickR").click(function () {
+            $('.long-paragraph').remove();
+          })
+
+          $("#hideBtn").click(function () {
+            $('.hideable-img').hide();
+          })
+
+          $("#toggleBtn").click(function () {
+            $('.hideable-img').toggle();
+          })
+
+          $("#fadeOutBtn").click(function () {
+            $('.hideable-img').fadeOut(4000, function () {
+              $(".images").append('<h1>Image Hidden Now!</h1>')
+            });
+          })
+
+          $("#fadeToggleBtn").click(function () {
+            $('.hideable-img').fadeToggle(2000);
+          })
+
+          $("#slideUpBtn").click(function () {
+            $('.hideable-img').slideUp(2000);
+          })
+
+          $('#customAnim').click(function () {
+            $('.hideable-img').animate({
+              height: "0px",
+              width: "920px",
+              marginBottom: "657px"
+            }, 2000);
+          })//end of customAnim click
+
+        })//end of document ready
+
+
+
+
+
+
+
+
+
+
+
+      $("#hideImg1").click(function () {
+        $("#img1 img").fadeToggle();
       });
 
-      $("#clickR").click(function () {
-        $('.long-paragraph').remove();
-      })
+      $("#hideImg2").click(function () {
+        $("#img2 img").fadeToggle();
+      });
 
-      $("#hideBtn").click(function () {
-        $('.hideable-img').hide();
-      })
+      $("#hideImg3").click(function () {
+        $("#img3 img").fadeToggle();
+      });
 
-      $("#toggleBtn").click(function () {
-        $('.hideable-img').toggle();
-      })
-
-      $("#fadeOutBtn").click(function () {
-        $('.hideable-img').fadeOut(4000, function () {
-          $(".images").append('<h1>Image Hidden Now!</h1>')
-        });
-      })
-
-      $("#fadeToggleBtn").click(function () {
-        $('.hideable-img').fadeToggle(2000);
-      })
-
-      $("#slideUpBtn").click(function () {
-        $('.hideable-img').slideUp(2000);
-      })
-
-      $('#customAnim').click(function () {
-        $('.hideable-img').animate({
-          height: "0px",
-          width: "920px",
-          marginBottom: "657px"
-        }, 2000);
-      })//end of customAnim click
-
-    })//end of document ready
+      $("#hideImg4").click(function () {
+        $("#img4 img").fadeToggle();
+      });
 
 
 
+      $("#addMore").click(function () {
+        $("#gridContainer").append($('<img id="img5" src="DŌP by RANDi.jpg" />'));
+
+        //$("#paragraphs").append( $("#myP").clone());
+      });
+
+      $("#addLess").click(function () {
+        $("#img5").remove();
+        //$("#paragraphs").append( $("#myP").clone());
+      });
 
 
 
-
-
-
-
-
-    $("#hideImg1").click(function(){
-            $("#img1 img").fadeToggle();
-         });
-    
-         $("#hideImg2").click(function(){
-            $("#img2 img").fadeToggle();
-         });
-    
-         $("#hideImg3").click(function(){
-            $("#img3 img").fadeToggle();
-         });
-    
-         $("#hideImg4").click(function(){
-            $("#img4 img").fadeToggle();
-         });
-    
-    
-    
-         $("#addMore").click(function(){
-           $( "#gridContainer" ).append( $( '<img id="img5" src="DŌP by RANDi.jpg" />' ) );
-    
-            //$("#paragraphs").append( $("#myP").clone());
-        });
-    
-        $("#addLess").click(function(){
-            $( "#img5" ).remove();
-            //$("#paragraphs").append( $("#myP").clone());
-        });
-
-
-
-  </script>
-</body>
+    </script>
+  </body>
 
 </html>

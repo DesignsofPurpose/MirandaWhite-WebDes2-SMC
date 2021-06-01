@@ -1,0 +1,22 @@
+.bg-beige {
+    background-color:beige;
+}
+.bg-purple{
+    background-color: rgb(51, 3, 51);
+}
+.bg-skyB{
+background-color:skyblue;
+}
+.bg-pink{
+    background-color: rgb(235, 57, 154);
+}
+
+.bg-bbyPink {
+    background-color: pink;
+}
+
+/* Text Colors */
+.txt-light {
+    color: pink;
+
+}

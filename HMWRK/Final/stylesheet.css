@@ -1,31 +1,81 @@
 @import url("colors.css");
+@import url("navbar.css");
+@import url("reset.css");
 
 body{
     background-color: beige;
     width: center;
-    margin: 100px;
+    margin: 20px;
     min-width: 0px;
 }
 
-.bg-beige {
-    background-color:beige;
-}
-.bg-purple{
-    background-color: rgb(51, 3, 51);
-}
-.bg-skyB{
-background-color:skyblue;
-}
-.bg-pink{
-    background-color: rgb(235, 57, 154);
-}
-
-.bg-bbyPink {
-    background-color: pink;
-}
 
 /* Text Colors */
 .txt-light {
     color: pink;
 
+}
+
+
+.flexbox-container{
+    height: none;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.flexbox-item{
+    /* body of blog page */
+    width: 200px;
+    margin: 10px;
+    border: 3px solid pink;
+    background-color: peachpuff;
+}
+.flexbox-item-1{
+    min-height: 100px;
+    
+}
+.flexbox-item-2{
+    min-height: 100px;
+   
+}
+.flexbox-item-3{
+    min-height: 100px;
+
+}
+.flexbox-item-4{
+    min-height: 100px;
+    flex-grow: 1;
+}
+.flexbox-item-5{
+    min-height: 100px;
+    
+}
+
+    /* align-content: none;
+    flex-wrap: wrap;
+    flex-basis: 0; 
+    align-self: center (overwrites);
+    order: 2; (changes order visually)*/
+
+
+    /* landing img w/ text */
+.jumbotron {
+    background-image: url('https://user-images.githubusercontent.com/79555766/116791887-26454680-aa72-11eb-85f4-33c47bb9f64e.jpg');
+    background-size: cover;
+    background-position: center initial;
+    border-radius: 0px;
+}
+
+.jumbotron h1,
+.jumbotron h3 {
+color: rgb(red, green, blue);
+padding-left: 5%;
+background-position: 0% 25%;
+background-size: cover;
+background-repeat: no-repeat;
+color: rgb(243, 243, 61);
+text-shadow: black 0.3em 0.3em 0.3em;
 }

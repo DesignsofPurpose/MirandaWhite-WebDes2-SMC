@@ -3,10 +3,14 @@
 @import url("reset.css");
 
 body{
-    background-color: beige;
+    background-color: lavender;
     width: center;
     margin: 20px;
     min-width: 0px;
+    color: rgb(61, 26, 26);
+}
+.art2{
+    width: 33%;
 }
 
 
@@ -18,10 +22,10 @@ body{
 
 
 .flexbox-container{
-    height: none;
+    height: 100%;
     display: flex; 
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     flex-direction: row;
 }
 
@@ -63,10 +67,11 @@ body{
 
     /* landing img w/ text */
 .jumbotron {
-    background-image: url('https://user-images.githubusercontent.com/79555766/116791887-26454680-aa72-11eb-85f4-33c47bb9f64e.jpg');
+    background-image: url('https://images.pexels.com/photos/4144036/pexels-photo-4144036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
     background-position: center initial;
     border-radius: 0px;
+    height: 500px;
 }
 
 .jumbotron h1,

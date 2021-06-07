@@ -13,7 +13,7 @@ nav .logo-container {
 }
 nav ul {
     padding: 0px;
-    margin: 0px;
+    margin: -25px;
     list-style: none;
     text-align: center;
 }
@@ -61,6 +61,21 @@ nav a {
         flex-basis: 0;
         flex-grow: 1;
     }
+}
+
+/* footer */
+
+.footer{
+        background: linear-gradient(90deg, #fcb683, #92d5e9);
+        margin: 0px;
+        text-align: center;
+        display: inline-block;
+        margin: 11px;
+        width: 100%;
+}
+.footer img{
+        width: 50px;
+        margin: 20px;
 }
 
 

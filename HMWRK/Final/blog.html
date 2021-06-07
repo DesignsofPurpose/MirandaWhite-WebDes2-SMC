@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+
     <link rel="stylesheet" href="stylesheet.css">
+
+    <title>Blog-Final nonprofit</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 
 </head>
 
@@ -28,20 +34,29 @@
     </header>
 
     <main>
+        <!-- jumbotron in stylesheet -->
+        <section id="jumbotron3" class="flex-container">
+            <article class="bg-beige jumbotron3">
+                <h1>We support the natural flow of learning.</h1>
+                <!-- <h3 id="text"> We support the natural flow of learning</h3>  -->
+            </article>
+        </section>
+
         <div class="flexbox-container">
 
-            <div class="flexbox-item flexbox-item-1">
-                <img src="SLE-3.png" id="blog1" height="400px" width="100%">
+            <div class="flexbox-item flexbox-item-1 loadMore">
+                <img src="SLE-3.png" id="blog1" height="300px" width="100%">
                 <P>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti vel illo quidem possimus
                     itaque odio deleniti earum vero ut beatae magni, esse eum velit reprehenderit sint est. Vero,
                     molestias.
                 </P>
-                <button>read more</button>
+                <button id="addMore">Load More Images</button>
             </div>
 
+
             <div class="flexbox-item flexbox-item-2">
-                <img src="SLE-4.png" id="blog2" height="400px" width="100%">
+                <img src="SLE-4.png" id="blog2" height="300px" width="100%">
                 <P>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti vel illo quidem possimus
                     itaque odio deleniti earum vero ut beatae magni, esse eum velit reprehenderit sint est. Vero,
@@ -51,7 +66,7 @@
             </div>
 
             <div class="flexbox-item flexbox-item-3">
-                <img src="SLE-6.png" id="blog3" height="400px" width="100%">
+                <img src="SLE-6.png" id="blog3" height="300px" width="100%">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus nihil adipisci pariatur,
                     quos ullam dolor nobis iure nesciunt. Corrupti voluptates deserunt quod? Neque, iusto sint earum
@@ -67,7 +82,7 @@
         <div class="flexbox-container">
 
             <div class="flexbox-item flexbox-item-4">
-                <img src="SLE-8.png" id="blog4" height="500px" width="100%">
+                <img src="SLE-8.png" id="blog4" height="400px" width="100%">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus nihil adipisci pariatur,
                     quos ullam dolor nobis iure nesciunt. Corrupti voluptates deserunt quod? Neque, iusto sint earum
@@ -77,7 +92,7 @@
             </div>
 
             <div class="flexbox-item flexbox-item-5">
-                <img src="SLE-1.png" id="blog5" height="500px" width="100%">
+                <img src="SLE-1.png" id="blog5" height="400px" width="100%">
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloribus nihil adipisci pariatur,
                     quos ullam dolor nobis iure nesciunt. Corrupti voluptates deserunt quod? Neque, iusto sint earum
@@ -88,6 +103,15 @@
 
         </div>
     </main>
+
+    <footer>
+        <div class="footer"> 
+            <a class="instagram" href="https://www.instagram.com/savagelearningenvironment/"><img src="instagram.png"></a> 
+            <p>© 2021 Savage Learning Environment</br></br>
+                Los Angeles, CA</p>
+
+        </div>
+    </footer>
 
 </body>
 

@@ -14,6 +14,21 @@
   
     
 </head>
+<style>
+.container { 
+  height: 10px;
+  position: relative; 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+    </style>
 
 <body>
 
@@ -42,9 +57,9 @@
     <main>
         <!-- jumbotron in stylesheet -->
         <section id="jumbotron" class="flex-container">
-            <article class="bg-beige jumbotron">
-                <h1>S. L. E.</h1>
-                <h3 id="text"> We support the natural flow of learning</h3> <button> Learn More</button>
+            <article class="bg-beige jumbotron" height="100%" width="100%">
+                <h1>We support the natural flow of learning.</h1>
+                <!-- <h3 id="text"> We support the natural flow of learning</h3>  -->
             </article>
         </section>
 
@@ -53,21 +68,24 @@
             <article class="flexbox-container">
 
                 <div class="flexbox-item flexbox-item-1">
-                    <img src="SLE-2.png" style="width:33%">
+                    <img src="https://images.pexels.com/photos/5905497/pexels-photo-5905497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="100%" width="300">
                 </div>
 
-                <div class="flexbox-item flexbox-item-2">
-                    <img src="SLE-5.png" style="width:33%" id="art2">
-                    <P>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste corrupti vel illo quidem possimus
-                        itaque odio deleniti earum vero ut beatae magni, esse eum velit reprehenderit sint est. Vero,
-                        molestias.
+                <div class="flexbox-item flexbox-item-2"  width="25%">
+                    <P> <h1>About S. L. E.</h1>
+                        Located in the Leimert Park area of Los Angeles, the Savage Learning Environment is set up in our garage and extends into our backyard. It is here where our family and neighbors enjoy learning together in joy and power. Our learners are fearlessly jumping into deep conversations together, and we are vibing off of each other's questions, passions and thought-provoking ideas. Each learner is shining in unique ways, we are paying attention to our emotions, we are resolving conflicts together, and we are laughing a lot as we grow in our critical reading, writing, and mathematical abilities. Our doors are open, and we welcome more learners to join us.
                     </P>
-                    <button>read more</button>
+
+                    <div class="container">
+                        <div class="center">
+                            <button class="btn"><a href="about.html">Read More</a></button>
+                        </div>
+                      </div>
+                      
 
                 </div>
                 <div class="flexbox-item flexbox-item-3">
-                    <img src="SLE-9.png" >
+                    <img src="https://images.pexels.com/photos/5905486/pexels-photo-5905486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="100%" width="300">
                 </div>
             </article>
         </section>
@@ -75,7 +93,14 @@
 
 
 
-    <footer></footer>
+    <footer>
+        <div class="footer"> 
+            <a class="instagram" href="https://www.instagram.com/savagelearningenvironment/"><img src="instagram.png"></a> 
+            <p>© 2021 Savage Learning Environment</br></br>
+                Los Angeles, CA</p>
+
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -4,9 +4,13 @@
         float: none;
         display: block;
         width: 100%;
-        text-align: ; /* If you want the text to be left-aligned on small screens */
+        text-align: center; /* If you want the text to be left-aligned on small screens */
     }
 }
+
+
+
+
 
 /* donation form */
 
@@ -158,16 +162,5 @@
     height: 800px;
 }
 
-.readmore{
-    display: none;
-}
 
-.adopt-middle{
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.adopt-middle img{
-    width: 100%;
-}
 

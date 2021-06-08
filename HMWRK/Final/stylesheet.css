@@ -20,7 +20,7 @@ body{
     display: flex; 
     justify-content: space-around;
     align-items: stretch;
-    flex-direction: row;
+    flex-direction: row;    
 }
 
 
@@ -32,6 +32,7 @@ body{
     border: skyblue solid 2px;
     background-color: white;
     text-align: justify;
+    display: grid;
 }
 .flexbox-item-1{
     min-height: 100px;

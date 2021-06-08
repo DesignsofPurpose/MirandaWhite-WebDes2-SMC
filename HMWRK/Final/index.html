@@ -6,56 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="stylesheet.css">
-    
+
     <title>Final nonprofit</title>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
-    
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* On screens that are 992px wide or less, go from four columns to two columns */
+        @media screen and (max-width: 992px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+
+            .flexbox-container {
+                display: grid;
+            }
+
+            .flexbox-item {
+                display: grid;
+            }
+        }
+    </style>
 </head>
-<style>
-.container { 
-  height: 10px;
-  position: relative; 
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-
-* {
-  box-sizing: border-box;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-</style>
 
 <body>
 
@@ -94,25 +93,34 @@
         <section class="flex-container">
             <article class="flexbox-container">
 
-                <div class="flexbox-item flexbox-item-1">
-                    <img src="https://images.pexels.com/photos/5905497/pexels-photo-5905497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" height="100%" width="300">
+                <div class="flexbox-item flexbox-item-1 w-md-50">
+                    <img src="https://images.pexels.com/photos/5905497/pexels-photo-5905497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        height="100%" width="300">
                 </div>
 
-                <div class="flexbox-item flexbox-item-2"  width="25%">
-                    <P> <h1>About S. L. E.</h1>
-                        Located in the Leimert Park area of Los Angeles, the Savage Learning Environment is set up in our garage and extends into our backyard. It is here where our family and neighbors enjoy learning together in joy and power. Our learners are fearlessly jumping into deep conversations together, and we are vibing off of each other's questions, passions and thought-provoking ideas. Each learner is shining in unique ways, we are paying attention to our emotions, we are resolving conflicts together, and we are laughing a lot as we grow in our critical reading, writing, and mathematical abilities. Our doors are open, and we welcome more learners to join us.
+                <div class="flexbox-item flexbox-item-2 w-md-50" width="25%">
+                    <P>
+                    <h1>About S. L. E.</h1>
+                    Located in the Leimert Park area of Los Angeles, the Savage Learning Environment is set up in our
+                    garage and extends into our backyard. It is here where our family and neighbors enjoy learning
+                    together in joy and power. Our learners are fearlessly jumping into deep conversations together, and
+                    we are vibing off of each other's questions, passions and thought-provoking ideas. Each learner is
+                    shining in unique ways, we are paying attention to our emotions, we are resolving conflicts
+                    together, and we are laughing a lot as we grow in our critical reading, writing, and mathematical
+                    abilities. Our doors are open, and we welcome more learners to join us.
                     </P>
 
                     <div class="container">
-                        <div class="center">
+                        <div class="center w-md-50">
                             <button class="btn"><a href="about.html">Read More</a></button>
                         </div>
-                      </div>
-                      
+                    </div>
+
 
                 </div>
-                <div class="flexbox-item flexbox-item-3">
-                    <img src="https://images.pexels.com/photos/5905486/pexels-photo-5905486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" height="100%" width="300">
+                <div class="flexbox-item flexbox-item-3 w-md-50">
+                    <img src="https://images.pexels.com/photos/5905486/pexels-photo-5905486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        height="100%" width="300">
                 </div>
             </article>
         </section>
@@ -121,8 +129,9 @@
 
 
     <footer>
-        <div class="footer"> 
-            <a class="instagram" href="https://www.instagram.com/savagelearningenvironment/"><img src="instagram.png"></a> 
+        <div class="footer">
+            <a class="instagram" href="https://www.instagram.com/savagelearningenvironment/"><img
+                    src="instagram.png"></a>
             <p>© 2021 Savage Learning Environment</br></br>
                 Los Angeles, CA</p>
 

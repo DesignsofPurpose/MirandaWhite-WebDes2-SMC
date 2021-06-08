@@ -28,40 +28,7 @@ nav a {
     color: #222;
 }
 
-@media(min-width: 500px) {
 
-}
-
-@media(min-width: 960px){
-    nav.flex {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    nav .logo {
-        max-width: 30%;
-    }
-
-    nav ul.flex {
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-grow: 2;
-        text-align: center;
-        align-items: center;
-    }
-
-    nav li:first-child {
-        border-left: none;
-    }
-
-    nav ul li {
-        border-bottom: none;
-        border-right: 1px solid skyblue;
-        border-left: 1px solid skyblue;
-        /* margin: 0px 10px; */
-        flex-basis: 0;
-        flex-grow: 1;
-    }
-}
 
 /* footer */
 

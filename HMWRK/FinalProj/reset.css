@@ -179,7 +179,7 @@ Add responsiveness - on screens less than 500px, make the navigation links appea
   /* Create four equal columns that floats next to each other */
   .column {
     float: left;
-    width: 25%;
+    width: 0%;
     padding: 20px;
   }
   
@@ -191,17 +191,16 @@ Add responsiveness - on screens less than 500px, make the navigation links appea
   }
   
   
-  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+  On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other
+  /* @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
-      
+      width: 100%; 
     }
-  }
-  @media (min-width: 768px){
+  } */
+  /* @media (min-width: 768px){
       .w-md-50 {
           width:33%;}
-      }
+      } */
   
   @media (min-width:1024px){
       .flex-container{

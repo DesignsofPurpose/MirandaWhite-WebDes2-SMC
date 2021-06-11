@@ -5,13 +5,10 @@
 body{
     background-color: lavender;
     width: center;
-    margin: 0px;
+    margin: 25px;
     min-width: 0px;
     color: rgb(61, 26, 26);
     /* color: white; */
-    font: icon;
-    font-weight: bold;
-    
 }
 
 
@@ -73,10 +70,6 @@ body{
     border-radius: 0px;
     height: 500px;
 }
-
-
-
-
 .jumbotron2 {
     background-image: url('https://images.pexels.com/photos/5905479/pexels-photo-5905479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     background-size: cover;
@@ -117,7 +110,6 @@ background-repeat: no-repeat;
 color: rgb(162, 248, 128);
 text-shadow: black 0.3em 0.3em 0.3em;
 font-size: 50px;
-margin-top: 0px;
 }
 
 .jumbotron2 h1,

@@ -1,12 +1,12 @@
-Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other
-/* @media screen and (max-width: 678px) {
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 678px) {
     .navbar a {
         float: none;
         display: block;
         width: 100%;
         text-align: center; /* If you want the text to be left-aligned on small screens */
-    /* }
-/* } */ 
+    }
+}
 
 
 

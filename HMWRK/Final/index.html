@@ -14,39 +14,16 @@
 
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Create four equal columns that floats next to each other */
-        .column {
-            float: left;
-            width: 25%;
-            padding: 20px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* On screens that are 992px wide or less, go from four columns to two columns */
-        @media screen and (max-width: 992px) {
-            .column {
-                width: 50%;
-            }
-        }
-
         /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
+        /* @media screen and (max-width: 600px) {
             .column {
                 width: 100%;
             }
-            .header{
+
+            .header {
                 display: flex;
             }
+
             .flexbox-container {
                 display: grid;
             }
@@ -54,7 +31,7 @@
             .flexbox-item {
                 display: grid;
             }
-        }
+        } */
     </style>
 </head>
 
@@ -62,15 +39,16 @@
 
     <header>
 
-        <nav class="flex">
+        <nav class="flexbox">
 
-            <ul class="flex bg-pink">
+            <ul class="flex">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
 
 
-                <a href="index.html" class="logo-container"><img class="logo" alt="savage-logo" src="2.png"
-                        style="width:600px"></a>
+                <a href="index.html" class="logo-container">
+                    <img class="logo" id="logoImg" alt="savage-logo" src="2.png"
+                        style="width:200px"></a>
 
 
                 <li><a href="donations.html">Donations</a></li>
@@ -85,20 +63,23 @@
     <main>
         <!-- jumbotron in stylesheet -->
         <section id="jumbotron" class="flex-container">
-            <article class="bg-beige jumbotron" height="100%" width="100%">
-                <h1>We support the natural flow of learning.</h1>
+            <article class="jumbotron" height="100%" width="100%">
+                <h1 id="text"> We support the natural flow of learning.</h1>
                 <!-- <h3 id="text"> We support the natural flow of learning</h3>  -->
             </article>
         </section>
 
         <!-- 3 body containers -->
-        <section class="flex-container">
+        <section id="bdySection" class="flex-container">
             <article class="flexbox-container">
 
-                <div class="flexbox-item flexbox-item-1 w-md-50">
+                
+                <div class="flexbox-item flexbox-item-1">
+                    <!-- w-md-50 -->
                     <img src="https://images.pexels.com/photos/5905497/pexels-photo-5905497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                        height="100%" width="300">
+                       alt="yungBoy" id="yungBoy" height="100%" width="300">
                 </div>
+
 
                 <div class="flexbox-item flexbox-item-2 w-md-50" width="25%">
                     <P>
@@ -113,14 +94,14 @@
                     </P>
 
                     <div class="container">
-                        <div class="center w-md-50">
+                        <div class="center">
                             <button class="btn"><a href="about.html">Read More</a></button>
                         </div>
                     </div>
 
 
                 </div>
-                <div class="flexbox-item flexbox-item-3 w-md-50">
+                <div class="flexbox-item flexbox-item-3">
                     <img src="https://images.pexels.com/photos/5905486/pexels-photo-5905486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                         height="100%" width="300">
                 </div>

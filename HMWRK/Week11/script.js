@@ -54,7 +54,7 @@
         }
 
         let subscribeRequest = function () {
-            prompt("Subscribe to Newsletter Now to recieve Updates on Exclusive Merch and Discounts", "What's your email?");
+            prompt("Subscribe to Newsletter to keep up with Savage Learning Environment", "What's your email?");
         }
 
         window.addEventListener("load", function () {

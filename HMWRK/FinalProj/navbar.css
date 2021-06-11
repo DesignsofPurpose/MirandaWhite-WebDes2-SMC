@@ -147,6 +147,8 @@ nav a {
     }
 }
 
+
+
 /* mobile view */
 @media(max-width: 600px){
     nav.flex {
@@ -159,6 +161,9 @@ nav a {
     nav .logo {
         max-width: 200px;
     }
+    
+
+
 }
 /* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {

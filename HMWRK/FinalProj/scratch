@@ -1,0 +1,39 @@
+
+
+@media(min-width: 600px){
+    nav ul.flex {flex-direction: column;
+    text-align: center;
+    align-items: center;
+    display: list-item;
+    background: linear-gradient(90deg, #fcb683, #92d5e9);
+    }
+    nav .logo-container{
+        width: 20px;
+        height: 20%;
+    }
+    nav .logo{
+        width: 20px;  
+    }
+}
+
+/* mobile view */
+@media(max-width: 600px){
+    nav.flex {
+        flex-direction: row;
+        justify-content: space-between;
+        float: none;
+        width: 100%;
+    }
+    nav .logo {
+        max-width: none;
+    }
+}
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .flex a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+

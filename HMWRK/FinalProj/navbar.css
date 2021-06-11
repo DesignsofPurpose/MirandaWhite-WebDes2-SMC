@@ -43,6 +43,14 @@ nav a {
     }
 }
 
+.navigation {
+    display: none;
+}
+
+.menutoggle {
+    display: none;
+}
+
 
 
 

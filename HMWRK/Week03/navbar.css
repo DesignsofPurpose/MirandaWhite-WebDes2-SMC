@@ -49,23 +49,8 @@ nav a {
         align-items: center;
     }
 
-    nav li:first-child {
-        border-left: none;
-    }
-
-    nav ul li {
-        border-bottom: none;
-        border-right: 1px solid skyblue;
-        border-left: 1px solid skyblue;
-        /* margin: 0px 10px; */
-        flex-basis: 0;
-        flex-grow: 1;
-    }
 }
 
 
 
 
-
-
-  

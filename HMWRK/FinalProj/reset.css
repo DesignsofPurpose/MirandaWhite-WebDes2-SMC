@@ -114,6 +114,7 @@ Add responsiveness - on screens less than 500px, make the navigation links appea
     color: #444;
     text-align: center;
     padding: 19px;
+    width: 100%;
 }
 
 .set-amount {

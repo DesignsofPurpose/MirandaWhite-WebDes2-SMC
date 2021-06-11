@@ -11,6 +11,9 @@ body{
     /* color: white; */
     font: icon;
     font-weight: bold;
+    font-size: medium;
+    font-family: sans-serif;
+    font-kerning: initial;
     
 }
 
